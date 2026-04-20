@@ -3,11 +3,7 @@ import pandas as pd
 from html import escape
 
 BASE_DIR = Path(__file__).resolve().parents[2]
-
-# ✅ Where the canonical catalog data lives
 CATALOG_DIR = BASE_DIR / "output" / "catalog"
-
-# ✅ Where the static site should be written (GitHub Pages)
 SITE_DIR = BASE_DIR / "docs"
 
 SITE_DIR.mkdir(parents=True, exist_ok=True)
@@ -23,6 +19,7 @@ def main():
     )
 
     html = []
+
     html.append("<!DOCTYPE html>")
     html.append("<html lang='en'>")
     html.append("<head>")
@@ -33,15 +30,12 @@ def main():
     html.append("<body>")
 
     html.append("<div class='page'>")
-
     html.append("<h1>Command Center Data Catalog</h1>")
     html.append(
         "<p class='muted'>Search and browse available tables and their business definitions.</p>"
     )
-
     html.append(
-        "<input type='text' "
-        "id='searchInput' "
+        "<input type='text' id='searchInput' "
         "placeholder='Search tables or descriptions...'>"
     )
 
@@ -51,7 +45,7 @@ def main():
 
     for _, row in tables.iterrows():
         name = escape(row["TABLE_NAME"])
-        desc = escape(str(row["TABLE_DESCRIPTION"])) if row["TABLE_DESCRIPTION"] else ""
+        desc = escape(str(row["TABLE_DESCRIPTION"])) if pd.notna(row["TABLE_DESCRIPTION"]) else ""
 
         html.append(
             "<tr>"
@@ -61,8 +55,8 @@ def main():
         )
 
     html.append("</table>")
-    html.append("</div>")  # panel
-    html.append("</div>")  # page
+    html.append("</div>")
+    html.append("</div>")
 
     html.append("<script src='assets/search.js'></script>")
     html.append("</body>")
@@ -70,6 +64,7 @@ def main():
 
     out_file = SITE_DIR / "index.html"
     out_file.write_text("\n".join(html), encoding="utf-8")
+
     print("✅ Index page generated")
 
 if __name__ == "__main__":
