@@ -1,0 +1,4 @@
+owner,table_name,column_name,business_name,description,example_value,is_sensitive,notes
+CENTRALSERVICES,ADDRESS,ADDRESSID,Address Identifier,Unique identifier assigned to each address record.,123456,N,
+CENTRALSERVICES,ADDRESS,ADDRESSLINE1,Address Line 1,Primary street address line.,123 Main St,N,
+CENTRALSERVICES,ADDRESS,CITY,City,City name associated with the address.,Colorado Springs,N,

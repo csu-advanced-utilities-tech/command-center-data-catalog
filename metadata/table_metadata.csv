@@ -1,0 +1,2 @@
+owner,table_name,business_name,description,grain,primary_key,notes
+CENTRALSERVICES,ADDRESS,Address,Stores addresses from installation records and customer information uploads,One row per unique address,ADDRESSID,link address id to service locations table
