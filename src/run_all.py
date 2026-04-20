@@ -23,11 +23,17 @@ def copy_assets_to_docs():
         print("⚠️ No assets found to copy")
         return
 
-    if dst.exists():
-        shutil.rmtree(dst)
+    dst.mkdir(parents=True, exist_ok=True)
 
-    shutil.copytree(src, dst)
-    print("✅ Assets copied to docs/assets")
+    for item in src.iterdir():
+        target = dst / item.name
+        try:
+            if item.is_file():
+                shutil.copy2(item, target)
+        except PermissionError:
+            print(f"⚠️ Could not overwrite {target.name}; file is in use")
+
+    print("✅ Assets synced to docs/assets")
 
 def main():
     # ---- Validate metadata ----

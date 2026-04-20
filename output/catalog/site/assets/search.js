@@ -1,9 +1,21 @@
-document.getElementById("searchInput").addEventListener("keyup", function () {
-    const filter = this.value.toLowerCase();
-    const rows = document.querySelectorAll("#catalogTable tr");
+document.addEventListener("DOMContentLoaded", function () {
+    const input = document.getElementById("searchInput");
+    const table = document.getElementById("catalogTable");
 
-    for (let i = 1; i < rows.length; i++) {
-        const text = rows[i].innerText.toLowerCase();
-        rows[i].style.display = text.includes(filter) ? "" : "none";
+    if (!input || !table) {
+        console.warn("Search disabled: searchInput or catalogTable not found");
+        return;
     }
+
+    const rows = table.getElementsByTagName("tr");
+
+    input.addEventListener("keyup", function () {
+        const filter = input.value.toLowerCase();
+
+        // Skip header row (index 0)
+        for (let i = 1; i < rows.length; i++) {
+            const rowText = rows[i].textContent.toLowerCase();
+            rows[i].style.display = rowText.includes(filter) ? "" : "none";
+        }
+    });
 });
