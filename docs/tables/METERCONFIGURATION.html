@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>METERCONFIGURATION – Data Dictionary</title>
+  <link rel='stylesheet' href='../assets/styles.css'>
+</head>
+<body>
+<div class='page'>
+<p class='back-link'><a href='../index.html'>← Back to Data Catalog</a></p>
+<h1>METERCONFIGURATION</h1>
+<div class='panel'>
+<p class='muted'></p>
+<p><strong>Grain:</strong> </p>
+</div>
+<h2>Columns</h2>
+<div class='panel'>
+<table>
+<tr><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr>
+<tr><td>METERCONFIGURATIONID</td><td></td><td>NUMBER(10,0)</td><td>No</td><td></td></tr>
+<tr><td>METERCONFIGURATIONTYPEID</td><td></td><td>NUMBER(3,0)</td><td>No</td><td></td></tr>
+<tr><td>NAME</td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td></td></tr>
+<tr><td>DESCRIPTION</td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td></td></tr>
+<tr><td>METERCONFIGINTERVALDATACRC</td><td></td><td>NUMBER(10,0)</td><td>Yes</td><td></td></tr>
+<tr><td>METERMODELID</td><td></td><td>NUMBER(10,0)</td><td>Yes</td><td></td></tr>
+<tr><td>INTERVALLENGTH</td><td></td><td>NUMBER(5,0)</td><td>Yes</td><td></td></tr>
+<tr><td>BLOCKENDREADFLAG</td><td></td><td>NUMBER(1,0)</td><td>No</td><td></td></tr>
+<tr><td>BLOCKENDPULSEFLAG</td><td></td><td>NUMBER(1,0)</td><td>No</td><td></td></tr>
+<tr><td>INTERVALFORMATID</td><td></td><td>NUMBER(3,0)</td><td>Yes</td><td></td></tr>
+<tr><td>EXTENDEDINTSTATUSFLAG</td><td></td><td>NUMBER(1,0)</td><td>No</td><td></td></tr>
+<tr><td>SIMPLEINTSTATUSFLAG</td><td></td><td>NUMBER(1,0)</td><td>No</td><td></td></tr>
+<tr><td>NUMBEROFINTERVALBLOCKS</td><td></td><td>NUMBER(10,0)</td><td>Yes</td><td></td></tr>
+<tr><td>NUMBEROFINTERVALSPERBLOCK</td><td></td><td>NUMBER(10,0)</td><td>Yes</td><td></td></tr>
+<tr><td>INTERVALORDERISDESCENDING</td><td></td><td>NUMBER(1,0)</td><td>No</td><td></td></tr>
+<tr><td>REPROCESSMAPPING</td><td></td><td>NUMBER(1,0)</td><td>No</td><td></td></tr>
+<tr><td>PROGRAMDATA</td><td></td><td>BLOB(4000)</td><td>Yes</td><td></td></tr>
+<tr><td>MAXAMPS</td><td></td><td>NUMBER(5,1)</td><td>Yes</td><td></td></tr>
+<tr><td>NUMELMNTS</td><td></td><td>NUMBER(3,1)</td><td>Yes</td><td></td></tr>
+<tr><td>ELMNTVOLTS</td><td></td><td>NUMBER(5,2)</td><td>Yes</td><td></td></tr>
+<tr><td>INITCRCUTCDTM</td><td></td><td>DATE(7)</td><td>Yes</td><td></td></tr>
+<tr><td>ISFULLREGREADFLG</td><td></td><td>NUMBER(22)</td><td>Yes</td><td></td></tr>
+<tr><td>ISSNAPSUPPORTED</td><td></td><td>NUMBER(22)</td><td>Yes</td><td></td></tr>
+</table>
+</div>
+</div>
+</body>
+</html>

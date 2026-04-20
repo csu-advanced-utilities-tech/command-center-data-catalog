@@ -1,10 +1,14 @@
-import pandas as pd
 from pathlib import Path
+import pandas as pd
 from html import escape
 
 BASE_DIR = Path(__file__).resolve().parents[2]
+
+# ✅ Where the canonical catalog data lives
 CATALOG_DIR = BASE_DIR / "output" / "catalog"
-SITE_DIR = CATALOG_DIR / "site"
+
+# ✅ Where the static site should be written (GitHub Pages)
+SITE_DIR = BASE_DIR / "docs"
 
 SITE_DIR.mkdir(parents=True, exist_ok=True)
 

@@ -1,9 +1,16 @@
 import subprocess
 import sys
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parents[1]
 
 def run(script):
     print(f"\n▶ Running {script}")
-    result = subprocess.run([sys.executable, script])
+    result = subprocess.run(
+        [sys.executable, script],
+        cwd=BASE_DIR,
+        check=False
+    )
     if result.returncode != 0:
         raise RuntimeError(f"❌ Pipeline stopped at {script}")
 

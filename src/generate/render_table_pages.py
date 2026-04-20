@@ -1,10 +1,14 @@
-import pandas as pd
 from pathlib import Path
+import pandas as pd
 from html import escape
 
 BASE_DIR = Path(__file__).resolve().parents[2]
+
+# ✅ Read catalog data from here
 CATALOG_DIR = BASE_DIR / "output" / "catalog"
-SITE_DIR = CATALOG_DIR / "site"
+
+# ✅ Write site output here
+SITE_DIR = BASE_DIR / "docs"
 TABLES_DIR = SITE_DIR / "tables"
 
 TABLES_DIR.mkdir(parents=True, exist_ok=True)

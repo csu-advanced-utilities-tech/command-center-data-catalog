@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>ERRORLOG – Data Dictionary</title>
+  <link rel='stylesheet' href='../assets/styles.css'>
+</head>
+<body>
+<div class='page'>
+<p class='back-link'><a href='../index.html'>← Back to Data Catalog</a></p>
+<h1>ERRORLOG</h1>
+<div class='panel'>
+<p class='muted'></p>
+<p><strong>Grain:</strong> </p>
+</div>
+<h2>Columns</h2>
+<div class='panel'>
+<table>
+<tr><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr>
+<tr><td>ERRORLOGID</td><td></td><td>NUMBER(10,0)</td><td>No</td><td></td></tr>
+<tr><td>LOGTIME</td><td></td><td>TIMESTAMP(6)(11)</td><td>No</td><td></td></tr>
+<tr><td>ERRORTYPEID</td><td></td><td>NUMBER(10,0)</td><td>No</td><td></td></tr>
+<tr><td>SOURCE</td><td></td><td>VARCHAR2(255)</td><td>Yes</td><td></td></tr>
+<tr><td>DESCRIPTION</td><td></td><td>VARCHAR2(1000)</td><td>Yes</td><td></td></tr>
+<tr><td>SPUID</td><td></td><td>NUMBER(10,0)</td><td>Yes</td><td></td></tr>
+<tr><td>ENDPOINTID</td><td></td><td>NUMBER(10,0)</td><td>Yes</td><td></td></tr>
+<tr><td>ORGANIZATIONID</td><td></td><td>NUMBER(10,0)</td><td>Yes</td><td></td></tr>
+<tr><td>USERID</td><td></td><td>NUMBER(10,0)</td><td>Yes</td><td></td></tr>
+<tr><td>STACKTRACE</td><td></td><td>CLOB(4000)</td><td>Yes</td><td></td></tr>
+<tr><td>TARGET</td><td></td><td>VARCHAR2(255)</td><td>Yes</td><td></td></tr>
+<tr><td>MESSAGE</td><td></td><td>VARCHAR2(4000)</td><td>Yes</td><td></td></tr>
+<tr><td>ERRORRESOLVED</td><td></td><td>NUMBER(1,0)</td><td>No</td><td></td></tr>
+</table>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>ADDRESS – Data Dictionary</title>
+  <link rel='stylesheet' href='../assets/styles.css'>
+</head>
+<body>
+<div class='page'>
+<p class='back-link'><a href='../index.html'>← Back to Data Catalog</a></p>
+<h1>ADDRESS</h1>
+<div class='panel'>
+<p class='muted'>Stores addresses from installation records and customer information uploads</p>
+<p><strong>Grain:</strong> One row per unique address</p>
+</div>
+<h2>Columns</h2>
+<div class='panel'>
+<table>
+<tr><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr>
+<tr><td>ADDRESSID</td><td>Address Identifier</td><td>NUMBER(10,0)</td><td>No</td><td>Unique identifier assigned to each address record.</td></tr>
+<tr><td>ADDRESSLINE1</td><td>Address Line 1</td><td>NVARCHAR2(200)</td><td>Yes</td><td>Primary street address line.</td></tr>
+<tr><td>ADDRESSLINE2</td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td></td></tr>
+<tr><td>ADDRESSLINE3</td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td></td></tr>
+<tr><td>CITY</td><td>City</td><td>NVARCHAR2(56)</td><td>Yes</td><td>City name associated with the address.</td></tr>
+<tr><td>STATE</td><td></td><td>NVARCHAR2(40)</td><td>Yes</td><td></td></tr>
+<tr><td>ZIP</td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td></td></tr>
+</table>
+</div>
+</div>
+</body>
+</html>
