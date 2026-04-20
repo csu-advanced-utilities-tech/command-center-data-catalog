@@ -25,8 +25,7 @@ def main():
     html.append("<head>")
     html.append("  <meta charset='UTF-8'>")
     html.append("  <title>Command Center Data Catalog</title>")
-    html.append("  <link rel='stylesheet' href='assets/styles.css'>")
-    html.append("</head>")
+    html.append("  <link rel='stylesheet' href='assets/stylesd>")
     html.append("<body>")
 
     html.append("<div class='page'>")
@@ -35,8 +34,7 @@ def main():
         "<p class='muted'>Search and browse available tables and their business definitions.</p>"
     )
     html.append(
-        "<input type='text' id='searchInput' "
-        "placeholder='Search tables or descriptions...'>"
+        "<input type='text' id='searchInput' placeholder='Search tables or descriptions...'>"
     )
 
     html.append("<div class='panel'>")
@@ -49,7 +47,7 @@ def main():
 
         html.append(
             "<tr>"
-            f"<td><a href='tables/{name}.html'>{name}</a></td>"
+            f"<td><a href='tables/{name}.html></td>"
             f"<td>{desc}</td>"
             "</tr>"
         )
@@ -58,14 +56,7 @@ def main():
     html.append("</div>")
     html.append("</div>")
 
-    html.append("<script src='assets/search.js'></script>")
+    html.append("<script src='assetscript>")
     html.append("</body>")
     html.append("</html>")
 
-    out_file = SITE_DIR / "index.html"
-    out_file.write_text("\n".join(html), encoding="utf-8")
-
-    print("✅ Index page generated")
-
-if __name__ == "__main__":
-    main()
