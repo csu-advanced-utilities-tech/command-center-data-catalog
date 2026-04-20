@@ -87,7 +87,6 @@ def render_table_page(table_name, df):
     html.append("</div>")
     html.append("</div>")
 
-    html.append("<script src='../assets/search.js'></script>")
     html.append("</body>")
     html.append("</html>")
 

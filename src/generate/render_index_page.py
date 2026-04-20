@@ -37,7 +37,7 @@ def main():
     )
 
     html.append("<div class='panel'>")
-    html.append("<table>")
+    html.append("<table id='catalogTable'>")
     html.append("<tr><th>Table</th><th>Description</th></tr>")
 
     for _, row in tables.iterrows():

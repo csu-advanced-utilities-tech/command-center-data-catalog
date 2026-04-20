@@ -12,10 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
     input.addEventListener("keyup", function () {
         const filter = input.value.toLowerCase();
 
-        // Skip header row (index 0)
+        // Skip header row
         for (let i = 1; i < rows.length; i++) {
             const rowText = rows[i].textContent.toLowerCase();
             rows[i].style.display = rowText.includes(filter) ? "" : "none";
         }
     });
 });
+``
