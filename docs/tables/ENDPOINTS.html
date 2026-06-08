@@ -2,123 +2,132 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
-  <title>ENDPOINTS – Data Dictionary</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>ENDPOINTS – Command Center Data Catalog</title>
   <link rel='stylesheet' href='../assets/styles.css'>
 </head>
 <body>
+<header class='topbar'>
+  <a class='brand' href='../index.html'>Command Center Data Catalog</a>
+  <a class='hub-link' href='https://csu-advanced-utilities-tech.github.io/data-governance/' target='_blank' rel='noopener'>Governance Hub &#8599;</a>
+</header>
 <div class='page'>
-<p class='back-link'><a href='../index.html'>← Back to Catalog</a></p>
+<div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Endpoints &amp; Meters<span class='sep'>/</span>ENDPOINTS</div>
 <h1>ENDPOINTS</h1>
-<h2>Columns</h2>
+<div class='panel pad'>
+<p class='muted'>No description yet.</p>
+<p class='muted'><strong>Domain:</strong> Endpoints &amp; Meters</p>
+</div>
+<h2>Columns <span class='count'>105</span></h2>
 <div class='panel'>
 <table>
-<tr><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr>
-<tr><td>ENDPOINTID</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SERIALNUMBER</td><td>nan</td><td>VARCHAR2(30)</td><td>No</td><td>nan</td></tr>
-<tr><td>ENDPOINTTYPEID</td><td>nan</td><td>NUMBER(3,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>METERID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>STATUSCODEID</td><td>nan</td><td>NUMBER(3,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SPUID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>PREVSPUID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>FIRMWAREID</td><td>nan</td><td>NUMBER(5,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>INPUTSELECT</td><td>nan</td><td>NUMBER(3,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>CHANNEL</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>KH</td><td>nan</td><td>NUMBER(6,2)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>INITIALKWH</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>NUMDIGITS</td><td>nan</td><td>NUMBER(3,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>FIRSTPROGRAMDATE</td><td>nan</td><td>DATE(7)</td><td>No</td><td>nan</td></tr>
-<tr><td>LASTPROGRAMDATE</td><td>nan</td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>RECONFIGMASK</td><td>nan</td><td>NUMBER(5,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>RECONFIGDATE</td><td>nan</td><td>DATE(7)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>NOTES</td><td>nan</td><td>NVARCHAR2(510)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ORGANIZATIONID</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>CONFIGURATIONGROUPID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ARCHIVE</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>RECONFIGRETRIES</td><td>nan</td><td>NUMBER(3,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>LASTSTATUSCHANGED</td><td>nan</td><td>DATE(7)</td><td>No</td><td>nan</td></tr>
-<tr><td>GOODPACKETCOUNT</td><td>nan</td><td>NUMBER(5,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>LASTGOODPACKET</td><td>nan</td><td>DATE(7)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>DEMANDRESET</td><td>nan</td><td>NUMBER(1,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>LASTRESETDAY</td><td>nan</td><td>DATE(7)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>METERGROUPCRC</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>LOWSIGNALSTART</td><td>nan</td><td>DATE(7)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>LASTBILLABLEREAD</td><td>nan</td><td>DATE(7)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>USAGEVIOLATIONDATE</td><td>nan</td><td>DATE(7)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ENDPOINTMODELID</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>HEALTHSTART</td><td>nan</td><td>DATE(7)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>CONFIGURATIONENABLED</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>FOUNDDATE</td><td>nan</td><td>DATE(7)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>FINDTARGET</td><td>nan</td><td>NUMBER(5,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>LASTCONFIRMEDCNFGGROUPID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>RECONFIGCOMMANDSSENTDATE</td><td>nan</td><td>DATE(7)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>NEEDRECONFIGURATION</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>RECONFIGTYPEID</td><td>nan</td><td>NUMBER(3,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>FREQASSIGNSENDCOUNT</td><td>nan</td><td>NUMBER(3,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SKIPFINDDETECTION</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>NEEDSINITIALASYNCREQUEST</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>DEMANDRESETPENDING</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>ASYNCREADINGDATE</td><td>nan</td><td>DATE(7)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ASYNCREQUESTPACKETDEFINITIONID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>DETENT</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SETMUSERIALNUMBERS</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>ZEROUSAGEDATE</td><td>nan</td><td>DATE(7)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>DEMANDRESETFAILURE</td><td>nan</td><td>DATE(7)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>DEMANDRESETGROUPID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>NOTLOGGINGEXCLUSIONDATE</td><td>nan</td><td>DATE(7)</td><td>No</td><td>nan</td></tr>
-<tr><td>SERIALNUMBERINVALID</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>HWMODELID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SUSPECTOUTAGEDATE</td><td>nan</td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>NETMETERINGENABLED</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>ROLLINGKWENABLED</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SENDPEAKSETTINGS</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SERIALNUMBERGROUPID</td><td>nan</td><td>NUMBER(3,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>NEEDSTOU12INITIALASYNCREQUEST</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>NEEDSTOU34INITIALASYNCREQUEST</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>FINDPRIORITY</td><td>nan</td><td>NUMBER(3,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>NEEDSZMETARIFFINITIALASYNCREQ</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>TOUMODECONFIRMATIONPENDING</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SENDINTERVALDATA</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SENDSETGROUPS</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>FIRMWAREVERSION</td><td>nan</td><td>VARCHAR2(50)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ZIGBEEFIRMWAREVERSION</td><td>nan</td><td>VARCHAR2(50)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>NEEDSINITIALREADASYNCREQUEST</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>FAILEDWORKFLOWTYPEID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>LASTPACKETRECEIVED</td><td>nan</td><td>DATE(7)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SENDSETSEQUENCEBP</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SENDSETCALENDAR</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SENDSETINTERVALCONFIG</td><td>nan</td><td>NUMBER(1,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SECNEEDCONFIGURATION</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SECCONFIGURATIONENABLED</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SECCONFIGRETRIES</td><td>nan</td><td>NUMBER(3,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SECRECONFIGCOMMANDSSENTDATE</td><td>nan</td><td>DATE(7)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>LASTEVENTTYPEID</td><td>nan</td><td>NUMBER(22)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SECURITYSTATUSCODEID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SECURITYCNFGRETRYQT</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>DEMANDRESETBILLINGCYCLEID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SENDSETLCOTIMES</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SENDSETSDOCONFIG</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SENDSWITCHCONFIGCMD</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SENDSETSEQUENCEHAN</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>HANENABLED</td><td>nan</td><td>NUMBER(1,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>IPADDR</td><td>nan</td><td>NUMBER(20,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SCHDDRSTATE</td><td>nan</td><td>NUMBER(2,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SCHDDRRTRYCNT</td><td>nan</td><td>NUMBER(2,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SCHDDRCMDSNDDTM</td><td>nan</td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>IPADDRV6</td><td>nan</td><td>VARCHAR2(45)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>NUMDIGITSCHNLTWO</td><td>nan</td><td>NUMBER(3,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>LASTCFGCHANGEUTCDTM</td><td>nan</td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>TENANTID</td><td>nan</td><td>NUMBER(5,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>ISQURTNSTATE</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SCHDDROPTYPE</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>MODELNAMEKEY</td><td>nan</td><td>VARCHAR2(200)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>CLTRASSCDTM</td><td>nan</td><td>DATE(7)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ENDPOINTMODELHASH</td><td>nan</td><td>VARCHAR2(200)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ISAPPCAPABLE</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>DEVICEMODELNAME</td><td>nan</td><td>VARCHAR2(100)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>PDUMODELNAME</td><td>nan</td><td>VARCHAR2(100)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>COMMSTECHMODELNAME</td><td>nan</td><td>VARCHAR2(100)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>UTILITYSERIALNUMBER</td><td>nan</td><td>VARCHAR2(50)</td><td>Yes</td><td>nan</td></tr>
-</table>
+<thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
+<tr><td class='num'>1</td><td><strong>ENDPOINTID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>2</td><td><strong>SERIALNUMBER</strong></td><td></td><td>VARCHAR2(30)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>ENDPOINTTYPEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>4</td><td><strong>METERID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>5</td><td><strong>STATUSCODEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>6</td><td><strong>SPUID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>7</td><td><strong>PREVSPUID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>8</td><td><strong>FIRMWAREID</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>9</td><td><strong>INPUTSELECT</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>10</td><td><strong>CHANNEL</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>11</td><td><strong>KH</strong></td><td></td><td>NUMBER(6,2)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>12</td><td><strong>INITIALKWH</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>13</td><td><strong>NUMDIGITS</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>14</td><td><strong>FIRSTPROGRAMDATE</strong></td><td></td><td>DATE(7)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>15</td><td><strong>LASTPROGRAMDATE</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>16</td><td><strong>RECONFIGMASK</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>17</td><td><strong>RECONFIGDATE</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>18</td><td><strong>NOTES</strong></td><td></td><td>NVARCHAR2(510)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>19</td><td><strong>ORGANIZATIONID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>20</td><td><strong>CONFIGURATIONGROUPID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>21</td><td><strong>ARCHIVE</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>22</td><td><strong>RECONFIGRETRIES</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>23</td><td><strong>LASTSTATUSCHANGED</strong></td><td></td><td>DATE(7)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>24</td><td><strong>GOODPACKETCOUNT</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>25</td><td><strong>LASTGOODPACKET</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>26</td><td><strong>DEMANDRESET</strong></td><td></td><td>NUMBER(1)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>27</td><td><strong>LASTRESETDAY</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>28</td><td><strong>METERGROUPCRC</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>29</td><td><strong>LOWSIGNALSTART</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>30</td><td><strong>LASTBILLABLEREAD</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>31</td><td><strong>USAGEVIOLATIONDATE</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>32</td><td><strong>ENDPOINTMODELID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>33</td><td><strong>HEALTHSTART</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>34</td><td><strong>CONFIGURATIONENABLED</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>35</td><td><strong>FOUNDDATE</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>36</td><td><strong>FINDTARGET</strong></td><td></td><td>NUMBER(5)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>37</td><td><strong>LASTCONFIRMEDCNFGGROUPID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>38</td><td><strong>RECONFIGCOMMANDSSENTDATE</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>39</td><td><strong>NEEDRECONFIGURATION</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>40</td><td><strong>RECONFIGTYPEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>41</td><td><strong>FREQASSIGNSENDCOUNT</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>42</td><td><strong>SKIPFINDDETECTION</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>43</td><td><strong>NEEDSINITIALASYNCREQUEST</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>44</td><td><strong>DEMANDRESETPENDING</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>45</td><td><strong>ASYNCREADINGDATE</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>46</td><td><strong>ASYNCREQUESTPACKETDEFINITIONID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>47</td><td><strong>DETENT</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>48</td><td><strong>SETMUSERIALNUMBERS</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>49</td><td><strong>ZEROUSAGEDATE</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>50</td><td><strong>DEMANDRESETFAILURE</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>51</td><td><strong>DEMANDRESETGROUPID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>52</td><td><strong>NOTLOGGINGEXCLUSIONDATE</strong></td><td></td><td>DATE(7)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>53</td><td><strong>SERIALNUMBERINVALID</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>54</td><td><strong>HWMODELID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>55</td><td><strong>SUSPECTOUTAGEDATE</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>56</td><td><strong>NETMETERINGENABLED</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>57</td><td><strong>ROLLINGKWENABLED</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>58</td><td><strong>SENDPEAKSETTINGS</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>59</td><td><strong>SERIALNUMBERGROUPID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>60</td><td><strong>NEEDSTOU12INITIALASYNCREQUEST</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>61</td><td><strong>NEEDSTOU34INITIALASYNCREQUEST</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>62</td><td><strong>FINDPRIORITY</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>63</td><td><strong>NEEDSZMETARIFFINITIALASYNCREQ</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>64</td><td><strong>TOUMODECONFIRMATIONPENDING</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>65</td><td><strong>SENDINTERVALDATA</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>66</td><td><strong>SENDSETGROUPS</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>67</td><td><strong>FIRMWAREVERSION</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>68</td><td><strong>ZIGBEEFIRMWAREVERSION</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>69</td><td><strong>NEEDSINITIALREADASYNCREQUEST</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>70</td><td><strong>FAILEDWORKFLOWTYPEID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>71</td><td><strong>LASTPACKETRECEIVED</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>72</td><td><strong>SENDSETSEQUENCEBP</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>73</td><td><strong>SENDSETCALENDAR</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>74</td><td><strong>SENDSETINTERVALCONFIG</strong></td><td></td><td>NUMBER(1)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>75</td><td><strong>SECNEEDCONFIGURATION</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>76</td><td><strong>SECCONFIGURATIONENABLED</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>77</td><td><strong>SECCONFIGRETRIES</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>78</td><td><strong>SECRECONFIGCOMMANDSSENTDATE</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>79</td><td><strong>LASTEVENTTYPEID</strong></td><td></td><td>NUMBER(22)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>80</td><td><strong>SECURITYSTATUSCODEID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>81</td><td><strong>SECURITYCNFGRETRYQT</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>82</td><td><strong>DEMANDRESETBILLINGCYCLEID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>83</td><td><strong>SENDSETLCOTIMES</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>84</td><td><strong>SENDSETSDOCONFIG</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>85</td><td><strong>SENDSWITCHCONFIGCMD</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>86</td><td><strong>SENDSETSEQUENCEHAN</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>87</td><td><strong>HANENABLED</strong></td><td></td><td>NUMBER(1)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>88</td><td><strong>IPADDR</strong></td><td></td><td>NUMBER(20)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>89</td><td><strong>SCHDDRSTATE</strong></td><td></td><td>NUMBER(2)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>90</td><td><strong>SCHDDRRTRYCNT</strong></td><td></td><td>NUMBER(2)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>91</td><td><strong>SCHDDRCMDSNDDTM</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>92</td><td><strong>IPADDRV6</strong></td><td></td><td>VARCHAR2(45)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>93</td><td><strong>NUMDIGITSCHNLTWO</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>94</td><td><strong>LASTCFGCHANGEUTCDTM</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>95</td><td><strong>TENANTID</strong></td><td></td><td>NUMBER(5)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>96</td><td><strong>ISQURTNSTATE</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>97</td><td><strong>SCHDDROPTYPE</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>98</td><td><strong>MODELNAMEKEY</strong></td><td></td><td>VARCHAR2(200)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>99</td><td><strong>CLTRASSCDTM</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>100</td><td><strong>ENDPOINTMODELHASH</strong></td><td></td><td>VARCHAR2(200)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>101</td><td><strong>ISAPPCAPABLE</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>102</td><td><strong>DEVICEMODELNAME</strong></td><td></td><td>VARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>103</td><td><strong>PDUMODELNAME</strong></td><td></td><td>VARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>104</td><td><strong>COMMSTECHMODELNAME</strong></td><td></td><td>VARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>105</td><td><strong>UTILITYSERIALNUMBER</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+</tbody></table>
 </div>
 </div>
 </body>

@@ -2,50 +2,59 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
-  <title>USERS – Data Dictionary</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>USERS – Command Center Data Catalog</title>
   <link rel='stylesheet' href='../assets/styles.css'>
 </head>
 <body>
+<header class='topbar'>
+  <a class='brand' href='../index.html'>Command Center Data Catalog</a>
+  <a class='hub-link' href='https://csu-advanced-utilities-tech.github.io/data-governance/' target='_blank' rel='noopener'>Governance Hub &#8599;</a>
+</header>
 <div class='page'>
-<p class='back-link'><a href='../index.html'>← Back to Catalog</a></p>
+<div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Access &amp; Admin<span class='sep'>/</span>USERS</div>
 <h1>USERS</h1>
-<h2>Columns</h2>
+<div class='panel pad'>
+<p class='muted'>No description yet.</p>
+<p class='muted'><strong>Domain:</strong> Access &amp; Admin</p>
+</div>
+<h2>Columns <span class='count'>32</span></h2>
 <div class='panel'>
 <table>
-<tr><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr>
-<tr><td>USERID</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>ORGANIZATIONID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>LOGINUSER</td><td>nan</td><td>NVARCHAR2(100)</td><td>No</td><td>nan</td></tr>
-<tr><td>PASSWORD</td><td>nan</td><td>NVARCHAR2(100)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>FIRSTNAME</td><td>nan</td><td>NVARCHAR2(100)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>LASTNAME</td><td>nan</td><td>NVARCHAR2(100)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>PHONE</td><td>nan</td><td>VARCHAR2(50)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>PAGER</td><td>nan</td><td>VARCHAR2(50)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>EMAIL</td><td>nan</td><td>NVARCHAR2(100)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>LOCKOUT</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>LOGINATTEMPTS</td><td>nan</td><td>NUMBER(3,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>NOTES</td><td>nan</td><td>NVARCHAR2(510)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SYSTEMUSER</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>ARCHIVE</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>LASTPWDCHANGE</td><td>nan</td><td>TIMESTAMP(6)(11)</td><td>No</td><td>nan</td></tr>
-<tr><td>SPECIALLOGIN</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SHOWHIDDENSCREENSDISABLED</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>NTFCTNADDRTXT</td><td>nan</td><td>NVARCHAR2(510)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>NTFCTNUSERNM</td><td>nan</td><td>NVARCHAR2(100)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>NTFCTNPWDTXT</td><td>nan</td><td>NVARCHAR2(100)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>LASTLOGINDATE</td><td>nan</td><td>DATE(7)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>MUTUALAUTHNCTNFLG</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SBSCRBRFORMATCD</td><td>nan</td><td>VARCHAR2(50)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SBSCRBRRVSNCD</td><td>nan</td><td>VARCHAR2(50)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>USERDATACD</td><td>nan</td><td>VARCHAR2(50)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>PWDNEVEREXPIREFLG</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>CHANGEPWDNEXTLOGINFLG</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>MOBILEADMINPASSWORD</td><td>nan</td><td>NVARCHAR2(100)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ISTENANTOWNERFLG</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>NTFCTNADDRESSRAW</td><td>nan</td><td>NVARCHAR2(510)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>NTFCTNUSERNAMERAW</td><td>nan</td><td>NVARCHAR2(510)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>NTFCTNPASSWORDRAW</td><td>nan</td><td>NVARCHAR2(510)</td><td>Yes</td><td>nan</td></tr>
-</table>
+<thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
+<tr><td class='num'>1</td><td><strong>USERID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>2</td><td><strong>ORGANIZATIONID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>LOGINUSER</strong></td><td></td><td>NVARCHAR2(100)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>4</td><td><strong>PASSWORD</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>5</td><td><strong>FIRSTNAME</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>6</td><td><strong>LASTNAME</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>7</td><td><strong>PHONE</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>8</td><td><strong>PAGER</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>9</td><td><strong>EMAIL</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>10</td><td><strong>LOCKOUT</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>11</td><td><strong>LOGINATTEMPTS</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>12</td><td><strong>NOTES</strong></td><td></td><td>NVARCHAR2(510)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>13</td><td><strong>SYSTEMUSER</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>14</td><td><strong>ARCHIVE</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>15</td><td><strong>LASTPWDCHANGE</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>16</td><td><strong>SPECIALLOGIN</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>17</td><td><strong>SHOWHIDDENSCREENSDISABLED</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>18</td><td><strong>NTFCTNADDRTXT</strong></td><td></td><td>NVARCHAR2(510)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>19</td><td><strong>NTFCTNUSERNM</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>20</td><td><strong>NTFCTNPWDTXT</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>21</td><td><strong>LASTLOGINDATE</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>22</td><td><strong>MUTUALAUTHNCTNFLG</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>23</td><td><strong>SBSCRBRFORMATCD</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>24</td><td><strong>SBSCRBRRVSNCD</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>25</td><td><strong>USERDATACD</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>26</td><td><strong>PWDNEVEREXPIREFLG</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>27</td><td><strong>CHANGEPWDNEXTLOGINFLG</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>28</td><td><strong>MOBILEADMINPASSWORD</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>29</td><td><strong>ISTENANTOWNERFLG</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>30</td><td><strong>NTFCTNADDRESSRAW</strong></td><td></td><td>NVARCHAR2(510)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>31</td><td><strong>NTFCTNUSERNAMERAW</strong></td><td></td><td>NVARCHAR2(510)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>32</td><td><strong>NTFCTNPASSWORDRAW</strong></td><td></td><td>NVARCHAR2(510)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+</tbody></table>
 </div>
 </div>
 </body>

@@ -2,36 +2,45 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
-  <title>EVENTLOG – Data Dictionary</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>EVENTLOG – Command Center Data Catalog</title>
   <link rel='stylesheet' href='../assets/styles.css'>
 </head>
 <body>
+<header class='topbar'>
+  <a class='brand' href='../index.html'>Command Center Data Catalog</a>
+  <a class='hub-link' href='https://csu-advanced-utilities-tech.github.io/data-governance/' target='_blank' rel='noopener'>Governance Hub &#8599;</a>
+</header>
 <div class='page'>
-<p class='back-link'><a href='../index.html'>← Back to Catalog</a></p>
+<div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Events, Errors &amp; Status<span class='sep'>/</span>EVENTLOG</div>
 <h1>EVENTLOG</h1>
-<h2>Columns</h2>
+<div class='panel pad'>
+<p class='muted'>No description yet.</p>
+<p class='muted'><strong>Domain:</strong> Events, Errors &amp; Status</p>
+</div>
+<h2>Columns <span class='count'>18</span></h2>
 <div class='panel'>
 <table>
-<tr><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr>
-<tr><td>EVENTLOGID</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>LOGTIME</td><td>nan</td><td>TIMESTAMP(6)(11)</td><td>No</td><td>nan</td></tr>
-<tr><td>ENDPOINTID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SPUID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>COMMANDID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>EVENTTYPEID</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>USERNAME</td><td>nan</td><td>VARCHAR2(50)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>PROGRAMNAME</td><td>nan</td><td>VARCHAR2(20)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>EVENTTEXT</td><td>nan</td><td>VARCHAR2(500)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ORGANIZATIONID</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>EVENTDATE</td><td>nan</td><td>TIMESTAMP(6)(11)</td><td>No</td><td>nan</td></tr>
-<tr><td>OEVENTDATE</td><td>nan</td><td>NUMBER(5,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>RFALARMPRIORITYID</td><td>nan</td><td>NUMBER(3,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SQNCENUM</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>PACKETTYPEID</td><td>nan</td><td>NUMBER(3,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>MESSAGE</td><td>nan</td><td>VARCHAR2(4000)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>METERID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>METERBATCHID</td><td>nan</td><td>NUMBER(3,0)</td><td>Yes</td><td>nan</td></tr>
-</table>
+<thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
+<tr><td class='num'>1</td><td><strong>EVENTLOGID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>2</td><td><strong>LOGTIME</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>ENDPOINTID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>4</td><td><strong>SPUID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>5</td><td><strong>COMMANDID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>6</td><td><strong>EVENTTYPEID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>7</td><td><strong>USERNAME</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>8</td><td><strong>PROGRAMNAME</strong></td><td></td><td>VARCHAR2(20)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>9</td><td><strong>EVENTTEXT</strong></td><td></td><td>VARCHAR2(500)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>10</td><td><strong>ORGANIZATIONID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>11</td><td><strong>EVENTDATE</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>12</td><td><strong>OEVENTDATE</strong></td><td></td><td>NUMBER(5)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>13</td><td><strong>RFALARMPRIORITYID</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>14</td><td><strong>SQNCENUM</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>15</td><td><strong>PACKETTYPEID</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>16</td><td><strong>MESSAGE</strong></td><td></td><td>VARCHAR2(4000)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>17</td><td><strong>METERID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>18</td><td><strong>METERBATCHID</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+</tbody></table>
 </div>
 </div>
 </body>

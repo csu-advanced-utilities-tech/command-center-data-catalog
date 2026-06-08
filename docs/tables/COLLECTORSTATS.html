@@ -2,45 +2,54 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
-  <title>COLLECTORSTATS – Data Dictionary</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>COLLECTORSTATS – Command Center Data Catalog</title>
   <link rel='stylesheet' href='../assets/styles.css'>
 </head>
 <body>
+<header class='topbar'>
+  <a class='brand' href='../index.html'>Command Center Data Catalog</a>
+  <a class='hub-link' href='https://csu-advanced-utilities-tech.github.io/data-governance/' target='_blank' rel='noopener'>Governance Hub &#8599;</a>
+</header>
 <div class='page'>
-<p class='back-link'><a href='../index.html'>← Back to Catalog</a></p>
+<div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Network &amp; Collection<span class='sep'>/</span>COLLECTORSTATS</div>
 <h1>COLLECTORSTATS</h1>
-<h2>Columns</h2>
+<div class='panel pad'>
+<p class='muted'>No description yet.</p>
+<p class='muted'><strong>Domain:</strong> Network &amp; Collection</p>
+</div>
+<h2>Columns <span class='count'>27</span></h2>
 <div class='panel'>
 <table>
-<tr><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr>
-<tr><td>COLLECTORSTATSID</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>COLLECTORID</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>STATISTICDATE</td><td>nan</td><td>DATE(7)</td><td>No</td><td>nan</td></tr>
-<tr><td>LASTUPDATEDATE</td><td>nan</td><td>DATE(7)</td><td>No</td><td>nan</td></tr>
-<tr><td>TOTALDEVICES</td><td>nan</td><td>NUMBER(5,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>TOTALMESSAGES</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>PUBLISHEDREADINGS</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>EXPECTEDREADINGS</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>GAPREADINGS</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>TOTALEVENTS</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>MAXLAYER</td><td>nan</td><td>NUMBER(3,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>AVGLAYER</td><td>nan</td><td>FLOAT(126)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>COMMFAILURES</td><td>nan</td><td>NUMBER(5,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>AVGCOST</td><td>nan</td><td>NUMBER(3,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>OUTAGESREPORTED</td><td>nan</td><td>NUMBER(5,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>AVGRESPONSETIMESEC</td><td>nan</td><td>NUMBER(5,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>BYTESSENTTOCOLLECTOR</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>BYTESRECVFROMCOLLECTOR</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>DATASCORE</td><td>nan</td><td>NUMBER(3,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>NETWORKSCORE</td><td>nan</td><td>NUMBER(3,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>TOTALGOODPACKETS</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>TOTAL3DAYGOODPACKETS</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>EXPECTEDIDREADINGS</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>RECEIVEDIDREADINGS</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>METERSWITHLPREADINGGAPS</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>TOTALLPREADINGGAPS</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>TENANTID</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-</table>
+<thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
+<tr><td class='num'>1</td><td><strong>COLLECTORSTATSID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>2</td><td><strong>COLLECTORID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>STATISTICDATE</strong></td><td></td><td>DATE(7)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>4</td><td><strong>LASTUPDATEDATE</strong></td><td></td><td>DATE(7)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>5</td><td><strong>TOTALDEVICES</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>6</td><td><strong>TOTALMESSAGES</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>7</td><td><strong>PUBLISHEDREADINGS</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>8</td><td><strong>EXPECTEDREADINGS</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>9</td><td><strong>GAPREADINGS</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>10</td><td><strong>TOTALEVENTS</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>11</td><td><strong>MAXLAYER</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>12</td><td><strong>AVGLAYER</strong></td><td></td><td>FLOAT(126)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>13</td><td><strong>COMMFAILURES</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>14</td><td><strong>AVGCOST</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>15</td><td><strong>OUTAGESREPORTED</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>16</td><td><strong>AVGRESPONSETIMESEC</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>17</td><td><strong>BYTESSENTTOCOLLECTOR</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>18</td><td><strong>BYTESRECVFROMCOLLECTOR</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>19</td><td><strong>DATASCORE</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>20</td><td><strong>NETWORKSCORE</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>21</td><td><strong>TOTALGOODPACKETS</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>22</td><td><strong>TOTAL3DAYGOODPACKETS</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>23</td><td><strong>EXPECTEDIDREADINGS</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>24</td><td><strong>RECEIVEDIDREADINGS</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>25</td><td><strong>METERSWITHLPREADINGGAPS</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>26</td><td><strong>TOTALLPREADINGGAPS</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>27</td><td><strong>TENANTID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+</tbody></table>
 </div>
 </div>
 </body>

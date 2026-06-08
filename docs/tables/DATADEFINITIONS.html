@@ -2,53 +2,62 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
-  <title>DATADEFINITIONS – Data Dictionary</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>DATADEFINITIONS – Command Center Data Catalog</title>
   <link rel='stylesheet' href='../assets/styles.css'>
 </head>
 <body>
+<header class='topbar'>
+  <a class='brand' href='../index.html'>Command Center Data Catalog</a>
+  <a class='hub-link' href='https://csu-advanced-utilities-tech.github.io/data-governance/' target='_blank' rel='noopener'>Governance Hub &#8599;</a>
+</header>
 <div class='page'>
-<p class='back-link'><a href='../index.html'>← Back to Catalog</a></p>
+<div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Access &amp; Admin<span class='sep'>/</span>DATADEFINITIONS</div>
 <h1>DATADEFINITIONS</h1>
-<h2>Columns</h2>
+<div class='panel pad'>
+<p class='muted'>No description yet.</p>
+<p class='muted'><strong>Domain:</strong> Access &amp; Admin</p>
+</div>
+<h2>Columns <span class='count'>35</span></h2>
 <div class='panel'>
 <table>
-<tr><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr>
-<tr><td>DATADEFINITIONID</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>NAME</td><td>nan</td><td>VARCHAR2(255)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>BITS</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ENDPOINTDATATYPEID</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>MINVALUE</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>MAXVALUE</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SCALEFACTOR</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>NOTES</td><td>nan</td><td>CLOB(4000)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>PROCESSINGRULE</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>DATASIZEGROUPID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ISPUBLIC</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>TOU</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SHORTNAME</td><td>nan</td><td>VARCHAR2(50)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>DBCOLUMN</td><td>nan</td><td>VARCHAR2(50)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ISDIAGNOSTIC</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>READINGSTABLEID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>MAXBITSCORRECTED</td><td>nan</td><td>NUMBER(3,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>MULTIUTILITY</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>UNITID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ISCUMULATIVE</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>HISTORYORDER</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ISPREVIOUS</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>DATETIMEID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>DXDATADEFINITIONID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SUPPORTEDEPMODELS</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ISRFMESHREGISTER</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>METRICSOURCEID</td><td>nan</td><td>NUMBER(5,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>METRICCATEGORYID</td><td>nan</td><td>NUMBER(3,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>AGGREGATIONTYPEID</td><td>nan</td><td>NUMBER(3,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>RATE</td><td>nan</td><td>NUMBER(3,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>NUMBEROFOCCURRENCE</td><td>nan</td><td>NUMBER(3,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>METRICDEMANDTYPEID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>COINCDMDASSOCSOURCEID</td><td>nan</td><td>NUMBER(5,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>RESXKEYNM</td><td>nan</td><td>VARCHAR2(50)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ISROLLOVERSUPPORTED</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-</table>
+<thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
+<tr><td class='num'>1</td><td><strong>DATADEFINITIONID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>2</td><td><strong>NAME</strong></td><td></td><td>VARCHAR2(255)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>BITS</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>4</td><td><strong>ENDPOINTDATATYPEID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>5</td><td><strong>MINVALUE</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>6</td><td><strong>MAXVALUE</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>7</td><td><strong>SCALEFACTOR</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>8</td><td><strong>NOTES</strong></td><td></td><td>CLOB(4000)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>9</td><td><strong>PROCESSINGRULE</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>10</td><td><strong>DATASIZEGROUPID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>11</td><td><strong>ISPUBLIC</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>12</td><td><strong>TOU</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>13</td><td><strong>SHORTNAME</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>14</td><td><strong>DBCOLUMN</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>15</td><td><strong>ISDIAGNOSTIC</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>16</td><td><strong>READINGSTABLEID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>17</td><td><strong>MAXBITSCORRECTED</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>18</td><td><strong>MULTIUTILITY</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>19</td><td><strong>UNITID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>20</td><td><strong>ISCUMULATIVE</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>21</td><td><strong>HISTORYORDER</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>22</td><td><strong>ISPREVIOUS</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>23</td><td><strong>DATETIMEID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>24</td><td><strong>DXDATADEFINITIONID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>25</td><td><strong>SUPPORTEDEPMODELS</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>26</td><td><strong>ISRFMESHREGISTER</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>27</td><td><strong>METRICSOURCEID</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>28</td><td><strong>METRICCATEGORYID</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>29</td><td><strong>AGGREGATIONTYPEID</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>30</td><td><strong>RATE</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>31</td><td><strong>NUMBEROFOCCURRENCE</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>32</td><td><strong>METRICDEMANDTYPEID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>33</td><td><strong>COINCDMDASSOCSOURCEID</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>34</td><td><strong>RESXKEYNM</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>35</td><td><strong>ISROLLOVERSUPPORTED</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+</tbody></table>
 </div>
 </div>
 </body>

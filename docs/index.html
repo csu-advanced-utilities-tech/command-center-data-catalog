@@ -2,62 +2,161 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
   <title>Command Center Data Catalog</title>
   <link rel='stylesheet' href='assets/styles.css'>
 </head>
 <body>
+<header class='topbar'>
+  <a class='brand' href='index.html'>Command Center Data Catalog</a>
+  <a class='hub-link' href='https://csu-advanced-utilities-tech.github.io/data-governance/' target='_blank' rel='noopener'>Governance Hub &#8599;</a>
+</header>
 <div class='page'>
+<div class='hero'>
 <h1>Command Center Data Catalog</h1>
-<p class='muted'>Search and browse available tables.</p>
-<input type='text' id='searchInput' placeholder='Search tables...'>
+<p class='muted'>Browse the Command Center database by domain, or search across all tables.</p>
+<div class='stats'>
+  <div class='stat'><span class='num'>43</span><span class='label'>Tables</span></div>
+  <div class='stat'><span class='num'>885</span><span class='label'>Columns</span></div>
+  <div class='stat'><span class='num'>1</span><span class='label'>Documented</span></div>
+  <div class='stat'><span class='num'>2%</span><span class='label'>Coverage</span></div>
+</div>
+</div>
+<input type='text' id='searchInput' placeholder='Search tables by name, description, or domain...'>
+<section class='domain' data-domain='Premises &amp; Locations'>
+<h2>Premises &amp; Locations <span class='count'>3</span></h2>
 <div class='panel'>
-<table id='catalogTable'>
-<tr><th>Table</th><th>Description</th></tr>
-<tr><td><a href='tables/ADDRESS.html'>ADDRESS</a></td><td>Stores addresses from installation records and customer information uploads</td></tr>
-<tr><td><a href='tables/BILLINGCYCLES.html'>BILLINGCYCLES</a></td><td></td></tr>
-<tr><td><a href='tables/COLLECTORS.html'>COLLECTORS</a></td><td></td></tr>
-<tr><td><a href='tables/COLLECTORSTATS.html'>COLLECTORSTATS</a></td><td></td></tr>
-<tr><td><a href='tables/COMMANDLOG.html'>COMMANDLOG</a></td><td></td></tr>
-<tr><td><a href='tables/COMMANDRESPONSE.html'>COMMANDRESPONSE</a></td><td></td></tr>
-<tr><td><a href='tables/COMMANDSSENT.html'>COMMANDSSENT</a></td><td></td></tr>
-<tr><td><a href='tables/COMMANDSTATUSCODES.html'>COMMANDSTATUSCODES</a></td><td></td></tr>
-<tr><td><a href='tables/COMMANDTYPES.html'>COMMANDTYPES</a></td><td></td></tr>
-<tr><td><a href='tables/DATABASE_MAINT_ARCHIVE.html'>DATABASE_MAINT_ARCHIVE</a></td><td></td></tr>
-<tr><td><a href='tables/DATADEFINITIONS.html'>DATADEFINITIONS</a></td><td></td></tr>
-<tr><td><a href='tables/ENDPOINTDEPLOYMENTSTATISTICS.html'>ENDPOINTDEPLOYMENTSTATISTICS</a></td><td></td></tr>
-<tr><td><a href='tables/ENDPOINTGROUPASSOC.html'>ENDPOINTGROUPASSOC</a></td><td></td></tr>
-<tr><td><a href='tables/ENDPOINTMETERCONFIGURATION.html'>ENDPOINTMETERCONFIGURATION</a></td><td></td></tr>
-<tr><td><a href='tables/ENDPOINTMODELS.html'>ENDPOINTMODELS</a></td><td></td></tr>
-<tr><td><a href='tables/ENDPOINTNOTES.html'>ENDPOINTNOTES</a></td><td></td></tr>
-<tr><td><a href='tables/ENDPOINTS.html'>ENDPOINTS</a></td><td></td></tr>
-<tr><td><a href='tables/ENDPOINTSTATUSCODEHISTORY.html'>ENDPOINTSTATUSCODEHISTORY</a></td><td></td></tr>
-<tr><td><a href='tables/ERRORLOG.html'>ERRORLOG</a></td><td></td></tr>
-<tr><td><a href='tables/ERRORTYPES.html'>ERRORTYPES</a></td><td></td></tr>
-<tr><td><a href='tables/EVENTLOG.html'>EVENTLOG</a></td><td></td></tr>
-<tr><td><a href='tables/EVENTTYPES.html'>EVENTTYPES</a></td><td></td></tr>
-<tr><td><a href='tables/GPSLOCATIONS.html'>GPSLOCATIONS</a></td><td></td></tr>
-<tr><td><a href='tables/GROUPS.html'>GROUPS</a></td><td></td></tr>
-<tr><td><a href='tables/GROUPTYPES.html'>GROUPTYPES</a></td><td></td></tr>
-<tr><td><a href='tables/IDREADINGLATESTVALUES.html'>IDREADINGLATESTVALUES</a></td><td></td></tr>
-<tr><td><a href='tables/IDREADINGLOGS.html'>IDREADINGLOGS</a></td><td></td></tr>
-<tr><td><a href='tables/INTERVALDATA.html'>INTERVALDATA</a></td><td></td></tr>
-<tr><td><a href='tables/INTERVALDATALATESTVALUES.html'>INTERVALDATALATESTVALUES</a></td><td></td></tr>
-<tr><td><a href='tables/INTERVALTYPES.html'>INTERVALTYPES</a></td><td></td></tr>
-<tr><td><a href='tables/METERCONFIGURATION.html'>METERCONFIGURATION</a></td><td></td></tr>
-<tr><td><a href='tables/METERS.html'>METERS</a></td><td></td></tr>
-<tr><td><a href='tables/PACKETTYPES.html'>PACKETTYPES</a></td><td></td></tr>
-<tr><td><a href='tables/PLANS.html'>PLANS</a></td><td></td></tr>
-<tr><td><a href='tables/PLANSCHEDULES.html'>PLANSCHEDULES</a></td><td></td></tr>
-<tr><td><a href='tables/PLANTYPES.html'>PLANTYPES</a></td><td></td></tr>
-<tr><td><a href='tables/READ_SCHEDULE.html'>READ_SCHEDULE</a></td><td></td></tr>
-<tr><td><a href='tables/RFENDPOINTPROPERTIES.html'>RFENDPOINTPROPERTIES</a></td><td></td></tr>
-<tr><td><a href='tables/RSSDEVICES.html'>RSSDEVICES</a></td><td></td></tr>
-<tr><td><a href='tables/SERVICELOCATIONS.html'>SERVICELOCATIONS</a></td><td></td></tr>
-<tr><td><a href='tables/STATUSCODES.html'>STATUSCODES</a></td><td></td></tr>
-<tr><td><a href='tables/USERROLE.html'>USERROLE</a></td><td></td></tr>
-<tr><td><a href='tables/USERS.html'>USERS</a></td><td></td></tr>
+<table class='catalog-table'>
+<thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
+<tbody>
+<tr><td><a class='tname' href='tables/ADDRESS.html'>ADDRESS</a></td><td>Address</td><td>Stores addresses from installation records and customer information uploads</td><td class='num'>7</td></tr>
+<tr><td><a class='tname' href='tables/GPSLOCATIONS.html'>GPSLOCATIONS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>6</td></tr>
+<tr><td><a class='tname' href='tables/SERVICELOCATIONS.html'>SERVICELOCATIONS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>16</td></tr>
+</tbody>
 </table>
 </div>
+</section>
+<section class='domain' data-domain='Endpoints &amp; Meters'>
+<h2>Endpoints &amp; Meters <span class='count'>6</span></h2>
+<div class='panel'>
+<table class='catalog-table'>
+<thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
+<tbody>
+<tr><td><a class='tname' href='tables/ENDPOINTMETERCONFIGURATION.html'>ENDPOINTMETERCONFIGURATION</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>4</td></tr>
+<tr><td><a class='tname' href='tables/ENDPOINTMODELS.html'>ENDPOINTMODELS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>47</td></tr>
+<tr><td><a class='tname' href='tables/ENDPOINTS.html'>ENDPOINTS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>105</td></tr>
+<tr><td><a class='tname' href='tables/METERCONFIGURATION.html'>METERCONFIGURATION</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>23</td></tr>
+<tr><td><a class='tname' href='tables/METERS.html'>METERS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>44</td></tr>
+<tr><td><a class='tname' href='tables/RFENDPOINTPROPERTIES.html'>RFENDPOINTPROPERTIES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>101</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class='domain' data-domain='Network &amp; Collection'>
+<h2>Network &amp; Collection <span class='count'>3</span></h2>
+<div class='panel'>
+<table class='catalog-table'>
+<thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
+<tbody>
+<tr><td><a class='tname' href='tables/COLLECTORS.html'>COLLECTORS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>36</td></tr>
+<tr><td><a class='tname' href='tables/COLLECTORSTATS.html'>COLLECTORSTATS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>27</td></tr>
+<tr><td><a class='tname' href='tables/RSSDEVICES.html'>RSSDEVICES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>11</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class='domain' data-domain='Interval &amp; Register Reads'>
+<h2>Interval &amp; Register Reads <span class='count'>5</span></h2>
+<div class='panel'>
+<table class='catalog-table'>
+<thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
+<tbody>
+<tr><td><a class='tname' href='tables/IDREADINGLATESTVALUES.html'>IDREADINGLATESTVALUES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>7</td></tr>
+<tr><td><a class='tname' href='tables/IDREADINGLOGS.html'>IDREADINGLOGS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>16</td></tr>
+<tr><td><a class='tname' href='tables/INTERVALDATA.html'>INTERVALDATA</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>15</td></tr>
+<tr><td><a class='tname' href='tables/INTERVALDATALATESTVALUES.html'>INTERVALDATALATESTVALUES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>9</td></tr>
+<tr><td><a class='tname' href='tables/INTERVALTYPES.html'>INTERVALTYPES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>4</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class='domain' data-domain='Commands &amp; Control'>
+<h2>Commands &amp; Control <span class='count'>6</span></h2>
+<div class='panel'>
+<table class='catalog-table'>
+<thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
+<tbody>
+<tr><td><a class='tname' href='tables/COMMANDLOG.html'>COMMANDLOG</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>29</td></tr>
+<tr><td><a class='tname' href='tables/COMMANDRESPONSE.html'>COMMANDRESPONSE</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>9</td></tr>
+<tr><td><a class='tname' href='tables/COMMANDSSENT.html'>COMMANDSSENT</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>17</td></tr>
+<tr><td><a class='tname' href='tables/COMMANDSTATUSCODES.html'>COMMANDSTATUSCODES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>4</td></tr>
+<tr><td><a class='tname' href='tables/COMMANDTYPES.html'>COMMANDTYPES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>15</td></tr>
+<tr><td><a class='tname' href='tables/PACKETTYPES.html'>PACKETTYPES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>2</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class='domain' data-domain='Events, Errors &amp; Status'>
+<h2>Events, Errors &amp; Status <span class='count'>6</span></h2>
+<div class='panel'>
+<table class='catalog-table'>
+<thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
+<tbody>
+<tr><td><a class='tname' href='tables/ENDPOINTSTATUSCODEHISTORY.html'>ENDPOINTSTATUSCODEHISTORY</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>4</td></tr>
+<tr><td><a class='tname' href='tables/ERRORLOG.html'>ERRORLOG</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>13</td></tr>
+<tr><td><a class='tname' href='tables/ERRORTYPES.html'>ERRORTYPES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>6</td></tr>
+<tr><td><a class='tname' href='tables/EVENTLOG.html'>EVENTLOG</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>18</td></tr>
+<tr><td><a class='tname' href='tables/EVENTTYPES.html'>EVENTTYPES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>8</td></tr>
+<tr><td><a class='tname' href='tables/STATUSCODES.html'>STATUSCODES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>8</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class='domain' data-domain='Plans &amp; Schedules'>
+<h2>Plans &amp; Schedules <span class='count'>5</span></h2>
+<div class='panel'>
+<table class='catalog-table'>
+<thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
+<tbody>
+<tr><td><a class='tname' href='tables/BILLINGCYCLES.html'>BILLINGCYCLES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>5</td></tr>
+<tr><td><a class='tname' href='tables/PLANS.html'>PLANS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>10</td></tr>
+<tr><td><a class='tname' href='tables/PLANSCHEDULES.html'>PLANSCHEDULES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>17</td></tr>
+<tr><td><a class='tname' href='tables/PLANTYPES.html'>PLANTYPES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>2</td></tr>
+<tr><td><a class='tname' href='tables/READ_SCHEDULE.html'>READ_SCHEDULE</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>7</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class='domain' data-domain='Grouping &amp; Org'>
+<h2>Grouping &amp; Org <span class='count'>3</span></h2>
+<div class='panel'>
+<table class='catalog-table'>
+<thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
+<tbody>
+<tr><td><a class='tname' href='tables/ENDPOINTGROUPASSOC.html'>ENDPOINTGROUPASSOC</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>4</td></tr>
+<tr><td><a class='tname' href='tables/GROUPS.html'>GROUPS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>15</td></tr>
+<tr><td><a class='tname' href='tables/GROUPTYPES.html'>GROUPTYPES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>8</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class='domain' data-domain='Access &amp; Admin'>
+<h2>Access &amp; Admin <span class='count'>6</span></h2>
+<div class='panel'>
+<table class='catalog-table'>
+<thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
+<tbody>
+<tr><td><a class='tname' href='tables/DATABASE_MAINT_ARCHIVE.html'>DATABASE_MAINT_ARCHIVE</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>117</td></tr>
+<tr><td><a class='tname' href='tables/DATADEFINITIONS.html'>DATADEFINITIONS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>35</td></tr>
+<tr><td><a class='tname' href='tables/ENDPOINTDEPLOYMENTSTATISTICS.html'>ENDPOINTDEPLOYMENTSTATISTICS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>14</td></tr>
+<tr><td><a class='tname' href='tables/ENDPOINTNOTES.html'>ENDPOINTNOTES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>6</td></tr>
+<tr><td><a class='tname' href='tables/USERROLE.html'>USERROLE</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>2</td></tr>
+<tr><td><a class='tname' href='tables/USERS.html'>USERS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>32</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<div id='noResults'>No tables match your search.</div>
 </div>
 <script src='assets/search.js'></script>
 </body>

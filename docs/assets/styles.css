@@ -1,6 +1,9 @@
-/* -----------------------------
-   Global styling
------------------------------- */
+/* =====================================================================
+   Command Center Data Catalog
+   Shares the visual language of the Data Governance hub
+   (csu-advanced-utilities-tech/data-governance) so the two sites read
+   as one product.
+   ===================================================================== */
 
 :root {
   --bg: #f8fafc;
@@ -10,144 +13,149 @@
   --heading: #111827;
   --accent: #2563eb;
   --accent-light: #eff6ff;
+  --bar: #0f172a;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
   font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
   background-color: var(--bg);
   color: #374151;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-/* -----------------------------
-   Page container
------------------------------- */
+/* ----------------------------- Top bar ----------------------------- */
+
+.topbar {
+  background: var(--bar);
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.topbar .brand {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+.topbar .hub-link {
+  color: #93c5fd;
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+.topbar .hub-link:hover { color: #fff; text-decoration: underline; }
+
+/* ----------------------------- Page container ---------------------- */
 
 .page {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 32px 40px 64px;
+  padding: 28px 40px 64px;
 }
 
-/* -----------------------------
-   Headings
------------------------------- */
+/* ----------------------------- Headings ---------------------------- */
 
-h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--heading);
-  margin: 0 0 8px;
-}
-
+h1 { font-size: 1.9rem; font-weight: 600; color: var(--heading); margin: 0 0 6px; }
 h2 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--heading);
-  margin-top: 32px;
-  margin-bottom: 12px;
+  font-size: 1.2rem; font-weight: 600; color: var(--heading);
+  margin: 32px 0 12px; display: flex; align-items: baseline; gap: 10px;
 }
+p { margin: 0 0 12px; }
+.muted { color: var(--muted); font-size: 0.92rem; }
 
-/* -----------------------------
-   Text helpers
------------------------------- */
+/* ----------------------------- Header / hero panel ----------------- */
 
-p {
-  margin: 0 0 12px;
-}
+.hero { margin-top: 16px; }
+.hero h1 { margin-bottom: 4px; }
 
-.muted {
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-/* -----------------------------
-   Panels / cards
------------------------------- */
-
-.panel {
-  background: var(--panel);
-  border: 1px solid var(--border);
+.stats { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0 4px; }
+.stat {
+  background: var(--accent-light);
+  border: 1px solid #dbeafe;
   border-radius: 8px;
-  padding: 24px;
-  margin-top: 16px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 10px 16px;
+  min-width: 110px;
 }
+.stat .num { display: block; font-size: 1.4rem; font-weight: 700; color: var(--accent); line-height: 1.1; }
+.stat .label { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; }
 
-/* -----------------------------
-   Inputs
------------------------------- */
+/* ----------------------------- Search ------------------------------ */
 
 input[type="text"] {
   width: 100%;
-  max-width: 420px;
-  padding: 10px 12px;
+  max-width: 460px;
+  padding: 10px 14px;
   border: 1px solid var(--border);
-  border-radius: 6px;
-  font-size: 0.9rem;
-  margin-bottom: 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin: 20px 0 8px;
 }
-
 input[type="text"]:focus {
   outline: none;
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--accent-light);
 }
 
-/* -----------------------------
-   Tables
------------------------------- */
+/* ----------------------------- Panels ------------------------------ */
 
-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  font-size: 0.9rem;
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
 }
+.panel.pad { padding: 20px 24px; }
 
-th {
-  background: #f1f5f9;
-  text-align: left;
-  padding: 10px 12px;
+/* ----------------------------- Count chip -------------------------- */
+
+.count {
+  font-size: 0.72rem;
   font-weight: 600;
-  color: #111827;
-  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  background: #f1f5f9;
+  border-radius: 999px;
+  padding: 2px 9px;
 }
 
-td {
-  padding: 10px 12px;
-  border-bottom: 1px solid var(--border);
-  vertical-align: top;
+/* ----------------------------- Tables ------------------------------ */
+
+table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.9rem; }
+th {
+  background: #f1f5f9; text-align: left; padding: 10px 14px;
+  font-weight: 600; color: #111827; border-bottom: 1px solid var(--border);
 }
+td { padding: 10px 14px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+tbody tr:hover td { background-color: #f9fafb; }
+td.num { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+.undocumented { color: #cbd5e1; }
 
-tr:hover td {
-  background-color: #f9fafb;
-}
+/* ----------------------------- Links ------------------------------- */
 
-/* -----------------------------
-   Links
------------------------------- */
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.tname { font-weight: 600; }
 
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
+/* ----------------------------- Breadcrumb -------------------------- */
 
-a:hover {
-  text-decoration: underline;
-}
+.breadcrumb { font-size: 0.85rem; color: var(--muted); margin: 18px 0 4px; }
+.breadcrumb a { color: var(--muted); }
+.breadcrumb a:hover { color: var(--accent); }
+.breadcrumb .sep { margin: 0 6px; color: #cbd5e1; }
 
-/* -----------------------------
-   Utility
------------------------------- */
+/* ----------------------------- Empty state ------------------------- */
 
-.back-link {
-  display: inline-block;
-  margin-bottom: 16px;
-  font-size: 0.85rem;
+#noResults { display: none; color: var(--muted); padding: 24px 4px; }
+
+/* ----------------------------- Responsive -------------------------- */
+
+@media (max-width: 720px) {
+  .page { padding: 24px 20px 48px; }
 }

@@ -2,31 +2,40 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
-  <title>ERRORLOG – Data Dictionary</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>ERRORLOG – Command Center Data Catalog</title>
   <link rel='stylesheet' href='../assets/styles.css'>
 </head>
 <body>
+<header class='topbar'>
+  <a class='brand' href='../index.html'>Command Center Data Catalog</a>
+  <a class='hub-link' href='https://csu-advanced-utilities-tech.github.io/data-governance/' target='_blank' rel='noopener'>Governance Hub &#8599;</a>
+</header>
 <div class='page'>
-<p class='back-link'><a href='../index.html'>← Back to Catalog</a></p>
+<div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Events, Errors &amp; Status<span class='sep'>/</span>ERRORLOG</div>
 <h1>ERRORLOG</h1>
-<h2>Columns</h2>
+<div class='panel pad'>
+<p class='muted'>No description yet.</p>
+<p class='muted'><strong>Domain:</strong> Events, Errors &amp; Status</p>
+</div>
+<h2>Columns <span class='count'>13</span></h2>
 <div class='panel'>
 <table>
-<tr><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr>
-<tr><td>ERRORLOGID</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>LOGTIME</td><td>nan</td><td>TIMESTAMP(6)(11)</td><td>No</td><td>nan</td></tr>
-<tr><td>ERRORTYPEID</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>SOURCE</td><td>nan</td><td>VARCHAR2(255)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>DESCRIPTION</td><td>nan</td><td>VARCHAR2(1000)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SPUID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ENDPOINTID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ORGANIZATIONID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>USERID</td><td>nan</td><td>NUMBER(10,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>STACKTRACE</td><td>nan</td><td>CLOB(4000)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>TARGET</td><td>nan</td><td>VARCHAR2(255)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>MESSAGE</td><td>nan</td><td>VARCHAR2(4000)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ERRORRESOLVED</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-</table>
+<thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
+<tr><td class='num'>1</td><td><strong>ERRORLOGID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>2</td><td><strong>LOGTIME</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>ERRORTYPEID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>4</td><td><strong>SOURCE</strong></td><td></td><td>VARCHAR2(255)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>5</td><td><strong>DESCRIPTION</strong></td><td></td><td>VARCHAR2(1000)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>6</td><td><strong>SPUID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>7</td><td><strong>ENDPOINTID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>8</td><td><strong>ORGANIZATIONID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>9</td><td><strong>USERID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>10</td><td><strong>STACKTRACE</strong></td><td></td><td>CLOB(4000)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>11</td><td><strong>TARGET</strong></td><td></td><td>VARCHAR2(255)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>12</td><td><strong>MESSAGE</strong></td><td></td><td>VARCHAR2(4000)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>13</td><td><strong>ERRORRESOLVED</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+</tbody></table>
 </div>
 </div>
 </body>

@@ -2,35 +2,44 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
-  <title>PLANSCHEDULES – Data Dictionary</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>PLANSCHEDULES – Command Center Data Catalog</title>
   <link rel='stylesheet' href='../assets/styles.css'>
 </head>
 <body>
+<header class='topbar'>
+  <a class='brand' href='../index.html'>Command Center Data Catalog</a>
+  <a class='hub-link' href='https://csu-advanced-utilities-tech.github.io/data-governance/' target='_blank' rel='noopener'>Governance Hub &#8599;</a>
+</header>
 <div class='page'>
-<p class='back-link'><a href='../index.html'>← Back to Catalog</a></p>
+<div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Plans &amp; Schedules<span class='sep'>/</span>PLANSCHEDULES</div>
 <h1>PLANSCHEDULES</h1>
-<h2>Columns</h2>
+<div class='panel pad'>
+<p class='muted'>No description yet.</p>
+<p class='muted'><strong>Domain:</strong> Plans &amp; Schedules</p>
+</div>
+<h2>Columns <span class='count'>17</span></h2>
 <div class='panel'>
 <table>
-<tr><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr>
-<tr><td>PLANSCHEDULEID</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>PLANID</td><td>nan</td><td>NUMBER(10,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>ACTIVE</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>NEXTSTEP</td><td>nan</td><td>NUMBER(5,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SCHEDULETYPE</td><td>nan</td><td>NUMBER(3,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>RECURRING</td><td>nan</td><td>NUMBER(1,0)</td><td>No</td><td>nan</td></tr>
-<tr><td>RECURRENCEFACTOR</td><td>nan</td><td>NUMBER(5,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>SCHEDULEINTERVAL</td><td>nan</td><td>NUMBER(5,0)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>STARTDATE</td><td>nan</td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>ENDDATE</td><td>nan</td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>NEXTRUNDATE</td><td>nan</td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>LASTRUNDATE</td><td>nan</td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>NEXTSTEPDATE</td><td>nan</td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>CUSTOMRUNDATES</td><td>nan</td><td>CLOB(4000)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>RUNDATEADJUSTMENTMETHOD</td><td>nan</td><td>VARCHAR2(100)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>TASKDATA</td><td>nan</td><td>CLOB(4000)</td><td>Yes</td><td>nan</td></tr>
-<tr><td>OFFSETTIME</td><td>nan</td><td>NUMBER(22)</td><td>Yes</td><td>nan</td></tr>
-</table>
+<thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
+<tr><td class='num'>1</td><td><strong>PLANSCHEDULEID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>2</td><td><strong>PLANID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>ACTIVE</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>4</td><td><strong>NEXTSTEP</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>5</td><td><strong>SCHEDULETYPE</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>6</td><td><strong>RECURRING</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>7</td><td><strong>RECURRENCEFACTOR</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>8</td><td><strong>SCHEDULEINTERVAL</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>9</td><td><strong>STARTDATE</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>10</td><td><strong>ENDDATE</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>11</td><td><strong>NEXTRUNDATE</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>12</td><td><strong>LASTRUNDATE</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>13</td><td><strong>NEXTSTEPDATE</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>14</td><td><strong>CUSTOMRUNDATES</strong></td><td></td><td>CLOB(4000)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>15</td><td><strong>RUNDATEADJUSTMENTMETHOD</strong></td><td></td><td>VARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>16</td><td><strong>TASKDATA</strong></td><td></td><td>CLOB(4000)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>17</td><td><strong>OFFSETTIME</strong></td><td></td><td>NUMBER(22)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+</tbody></table>
 </div>
 </div>
 </body>
