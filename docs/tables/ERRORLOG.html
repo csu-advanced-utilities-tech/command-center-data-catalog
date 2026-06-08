@@ -14,8 +14,10 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Events, Errors &amp; Status<span class='sep'>/</span>ERRORLOG</div>
 <h1>ERRORLOG</h1>
+<p class='muted'>Error Log</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Errors occurring in Command Center software and functionality (system, collectors, endpoints, communication, data). Key for administrator troubleshooting.</p>
+<p><strong>Grain:</strong> One row per error</p>
 <p class='muted'><strong>Domain:</strong> Events, Errors &amp; Status</p>
 </div>
 <h2>Columns <span class='count'>13</span></h2>
@@ -23,12 +25,12 @@
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
 <tr><td class='num'>1</td><td><strong>ERRORLOGID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>2</td><td><strong>LOGTIME</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>ERRORTYPEID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>2</td><td><strong>LOGTIME</strong></td><td>Log Time</td><td>TIMESTAMP(6)(11)</td><td>No</td><td>When the error was logged.</td></tr>
+<tr><td class='num'>3</td><td><strong>ERRORTYPEID</strong></td><td>Error Type Identifier</td><td>NUMBER(10)</td><td>No</td><td>Type of error.</td></tr>
 <tr><td class='num'>4</td><td><strong>SOURCE</strong></td><td></td><td>VARCHAR2(255)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>5</td><td><strong>DESCRIPTION</strong></td><td></td><td>VARCHAR2(1000)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>6</td><td><strong>SPUID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>7</td><td><strong>ENDPOINTID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>5</td><td><strong>DESCRIPTION</strong></td><td>Description</td><td>VARCHAR2(1000)</td><td>Yes</td><td>Description of the error.</td></tr>
+<tr><td class='num'>6</td><td><strong>SPUID</strong></td><td>Collector Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>Collector related to the error (if any).</td></tr>
+<tr><td class='num'>7</td><td><strong>ENDPOINTID</strong></td><td>Endpoint Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>Endpoint related to the error (if any).</td></tr>
 <tr><td class='num'>8</td><td><strong>ORGANIZATIONID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>9</td><td><strong>USERID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>10</td><td><strong>STACKTRACE</strong></td><td></td><td>CLOB(4000)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>

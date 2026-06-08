@@ -14,8 +14,10 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Events, Errors &amp; Status<span class='sep'>/</span>EVENTLOG</div>
 <h1>EVENTLOG</h1>
+<p class='muted'>Event Log</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Alerts and events sent by endpoints and collectors (e.g., power outage/restore, demand reset, meter programming complete). Very large and fast-changing table - slow to query.</p>
+<p><strong>Grain:</strong> One row per event</p>
 <p class='muted'><strong>Domain:</strong> Events, Errors &amp; Status</p>
 </div>
 <h2>Columns <span class='count'>18</span></h2>
@@ -24,21 +26,21 @@
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
 <tr><td class='num'>1</td><td><strong>EVENTLOGID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>2</td><td><strong>LOGTIME</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>ENDPOINTID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>4</td><td><strong>SPUID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>ENDPOINTID</strong></td><td>Endpoint Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>Endpoint that raised the event.</td></tr>
+<tr><td class='num'>4</td><td><strong>SPUID</strong></td><td>Collector Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>Collector associated with the event.</td></tr>
 <tr><td class='num'>5</td><td><strong>COMMANDID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>6</td><td><strong>EVENTTYPEID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>6</td><td><strong>EVENTTYPEID</strong></td><td>Event Type Identifier</td><td>NUMBER(10)</td><td>No</td><td>Type of event.</td></tr>
 <tr><td class='num'>7</td><td><strong>USERNAME</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>8</td><td><strong>PROGRAMNAME</strong></td><td></td><td>VARCHAR2(20)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>9</td><td><strong>EVENTTEXT</strong></td><td></td><td>VARCHAR2(500)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>9</td><td><strong>EVENTTEXT</strong></td><td>Event Text</td><td>VARCHAR2(500)</td><td>Yes</td><td>Description of the event.</td></tr>
 <tr><td class='num'>10</td><td><strong>ORGANIZATIONID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>11</td><td><strong>EVENTDATE</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>11</td><td><strong>EVENTDATE</strong></td><td>Event Date</td><td>TIMESTAMP(6)(11)</td><td>No</td><td>Date/time the event occurred.</td></tr>
 <tr><td class='num'>12</td><td><strong>OEVENTDATE</strong></td><td></td><td>NUMBER(5)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>13</td><td><strong>RFALARMPRIORITYID</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>14</td><td><strong>SQNCENUM</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>15</td><td><strong>PACKETTYPEID</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>16</td><td><strong>MESSAGE</strong></td><td></td><td>VARCHAR2(4000)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>17</td><td><strong>METERID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>17</td><td><strong>METERID</strong></td><td>Meter Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>Meter associated with the event.</td></tr>
 <tr><td class='num'>18</td><td><strong>METERBATCHID</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 </tbody></table>
 </div>

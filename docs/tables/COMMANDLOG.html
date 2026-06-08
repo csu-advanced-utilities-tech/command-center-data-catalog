@@ -14,28 +14,30 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Commands &amp; Control<span class='sep'>/</span>COMMANDLOG</div>
 <h1>COMMANDLOG</h1>
+<p class='muted'>Command Log</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Commands issued by the Central Server. A single command may fan out to multiple collectors. Very large and fast-changing table - slow to query.</p>
+<p><strong>Grain:</strong> One row per issued command</p>
 <p class='muted'><strong>Domain:</strong> Commands &amp; Control</p>
 </div>
 <h2>Columns <span class='count'>29</span></h2>
 <div class='panel'>
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
-<tr><td class='num'>1</td><td><strong>COMMANDLOGID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>1</td><td><strong>COMMANDLOGID</strong></td><td>Command Log Identifier</td><td>NUMBER(10)</td><td>No</td><td>Unique identifier for the issued command.</td></tr>
 <tr><td class='num'>2</td><td><strong>ORGANIZATIONID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>3</td><td><strong>COMMANDID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>4</td><td><strong>COMMANDTYPEID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>5</td><td><strong>SPUID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>4</td><td><strong>COMMANDTYPEID</strong></td><td>Command Type Identifier</td><td>NUMBER(10)</td><td>No</td><td>Type of command issued.</td></tr>
+<tr><td class='num'>5</td><td><strong>SPUID</strong></td><td>Collector Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>Collector the command was routed through.</td></tr>
 <tr><td class='num'>6</td><td><strong>ADDRESSTYPE</strong></td><td></td><td>VARCHAR2(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>7</td><td><strong>ENDPOINTID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>7</td><td><strong>ENDPOINTID</strong></td><td>Endpoint Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>Endpoint the command targeted.</td></tr>
 <tr><td class='num'>8</td><td><strong>GROUPID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>9</td><td><strong>REQUESTID</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>10</td><td><strong>PACKETDEFINITIONID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>11</td><td><strong>COMMAND</strong></td><td></td><td>VARCHAR2(2000)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>12</td><td><strong>PRIORITY</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>13</td><td><strong>ISSUEDBY</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>14</td><td><strong>ISSUED</strong></td><td></td><td>DATE(7)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>13</td><td><strong>ISSUEDBY</strong></td><td>Issued By (User)</td><td>NUMBER(10)</td><td>No</td><td>User who issued the command.</td></tr>
+<tr><td class='num'>14</td><td><strong>ISSUED</strong></td><td>Issued Date/Time</td><td>DATE(7)</td><td>No</td><td>When the command was issued.</td></tr>
 <tr><td class='num'>15</td><td><strong>COMMANDCODE</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>16</td><td><strong>OISSUED</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>17</td><td><strong>ISCANCEL</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>

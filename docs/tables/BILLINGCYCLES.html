@@ -14,8 +14,10 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Plans &amp; Schedules<span class='sep'>/</span>BILLINGCYCLES</div>
 <h1>BILLINGCYCLES</h1>
+<p class='muted'>Billing Cycle</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Lists the billing cycles; the NAME field holds the cycle as a text value. A meter belongs to exactly one cycle.</p>
+<p><strong>Grain:</strong> One row per billing cycle</p>
 <p class='muted'><strong>Domain:</strong> Plans &amp; Schedules</p>
 </div>
 <h2>Columns <span class='count'>5</span></h2>
@@ -24,7 +26,7 @@
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
 <tr><td class='num'>1</td><td><strong>BILLINGCYCLEID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>2</td><td><strong>ORGANIZATIONID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>NAME</strong></td><td></td><td>NVARCHAR2(100)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>NAME</strong></td><td>Billing Cycle Name</td><td>NVARCHAR2(100)</td><td>No</td><td>The billing cycle as a text value.</td></tr>
 <tr><td class='num'>4</td><td><strong>NOTES</strong></td><td></td><td>NVARCHAR2(510)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>5</td><td><strong>TENANTID</strong></td><td></td><td>NUMBER(5)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 </tbody></table>

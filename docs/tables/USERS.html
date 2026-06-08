@@ -14,8 +14,10 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Access &amp; Admin<span class='sep'>/</span>USERS</div>
 <h1>USERS</h1>
+<p class='muted'>User</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Command Center user accounts (login, name, contact, lockout).</p>
+<p><strong>Grain:</strong> One row per user</p>
 <p class='muted'><strong>Domain:</strong> Access &amp; Admin</p>
 </div>
 <h2>Columns <span class='count'>32</span></h2>
@@ -24,13 +26,13 @@
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
 <tr><td class='num'>1</td><td><strong>USERID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>2</td><td><strong>ORGANIZATIONID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>LOGINUSER</strong></td><td></td><td>NVARCHAR2(100)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>LOGINUSER</strong></td><td>Login User</td><td>NVARCHAR2(100)</td><td>No</td><td>Command Center login name.</td></tr>
 <tr><td class='num'>4</td><td><strong>PASSWORD</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>5</td><td><strong>FIRSTNAME</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>6</td><td><strong>LASTNAME</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>5</td><td><strong>FIRSTNAME</strong></td><td>First Name</td><td>NVARCHAR2(100)</td><td>Yes</td><td>User&#x27;s first name.</td></tr>
+<tr><td class='num'>6</td><td><strong>LASTNAME</strong></td><td>Last Name</td><td>NVARCHAR2(100)</td><td>Yes</td><td>User&#x27;s last name.</td></tr>
 <tr><td class='num'>7</td><td><strong>PHONE</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>8</td><td><strong>PAGER</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>9</td><td><strong>EMAIL</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>9</td><td><strong>EMAIL</strong></td><td>Email</td><td>NVARCHAR2(100)</td><td>Yes</td><td>User&#x27;s email address.</td></tr>
 <tr><td class='num'>10</td><td><strong>LOCKOUT</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>11</td><td><strong>LOGINATTEMPTS</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>12</td><td><strong>NOTES</strong></td><td></td><td>NVARCHAR2(510)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>

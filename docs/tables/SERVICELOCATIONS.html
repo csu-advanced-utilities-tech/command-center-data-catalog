@@ -14,28 +14,30 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Premises &amp; Locations<span class='sep'>/</span>SERVICELOCATIONS</div>
 <h1>SERVICELOCATIONS</h1>
+<p class='muted'>Service Location</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Service-location information for meters, provided by the utility at installation. SERVLOC is the reference number.</p>
+<p><strong>Grain:</strong> One row per service location</p>
 <p class='muted'><strong>Domain:</strong> Premises &amp; Locations</p>
 </div>
 <h2>Columns <span class='count'>16</span></h2>
 <div class='panel'>
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
-<tr><td class='num'>1</td><td><strong>SERVICELOCATIONID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>2</td><td><strong>SERVLOC</strong></td><td></td><td>NVARCHAR2(200)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>ADDRESSID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>4</td><td><strong>CUSTOMERID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>1</td><td><strong>SERVICELOCATIONID</strong></td><td>Service Location Identifier</td><td>NUMBER(10)</td><td>No</td><td>Unique identifier for the service location.</td></tr>
+<tr><td class='num'>2</td><td><strong>SERVLOC</strong></td><td>Service Location Reference</td><td>NVARCHAR2(200)</td><td>Yes</td><td>The service-location reference number for the meter location.</td></tr>
+<tr><td class='num'>3</td><td><strong>ADDRESSID</strong></td><td>Address Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>Address of the service location.</td></tr>
+<tr><td class='num'>4</td><td><strong>CUSTOMERID</strong></td><td>Customer Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>Customer at the service location.</td></tr>
 <tr><td class='num'>5</td><td><strong>PREMISEID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>6</td><td><strong>EALOCATION</strong></td><td></td><td>NVARCHAR2(200)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>7</td><td><strong>GRIDLOCATION</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>8</td><td><strong>POLENO</strong></td><td></td><td>NVARCHAR2(40)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>9</td><td><strong>FEEDER</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>10</td><td><strong>REVENUECLASS</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>8</td><td><strong>POLENO</strong></td><td>Pole Number</td><td>NVARCHAR2(40)</td><td>Yes</td><td>Pole number associated with the location.</td></tr>
+<tr><td class='num'>9</td><td><strong>FEEDER</strong></td><td>Feeder</td><td>NVARCHAR2(100)</td><td>Yes</td><td>Distribution feeder serving the location.</td></tr>
+<tr><td class='num'>10</td><td><strong>REVENUECLASS</strong></td><td>Revenue Class</td><td>NVARCHAR2(100)</td><td>Yes</td><td>Revenue class for the service location.</td></tr>
 <tr><td class='num'>11</td><td><strong>BILLINGCYCLENAME</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>12</td><td><strong>DESCRIPTION</strong></td><td></td><td>NVARCHAR2(400)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>13</td><td><strong>METERPOSITION</strong></td><td></td><td>NVARCHAR2(510)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>14</td><td><strong>GPSLOCATIONID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>14</td><td><strong>GPSLOCATIONID</strong></td><td>GPS Location Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>GPS location of the service location.</td></tr>
 <tr><td class='num'>15</td><td><strong>LOCATIONID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>16</td><td><strong>TIMEZONECODE</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 </tbody></table>

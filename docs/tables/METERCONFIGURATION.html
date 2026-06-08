@@ -14,8 +14,10 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Endpoints &amp; Meters<span class='sep'>/</span>METERCONFIGURATION</div>
 <h1>METERCONFIGURATION</h1>
+<p class='muted'>Meter Configuration</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Meter configuration definitions including interval length and program data.</p>
+<p><strong>Grain:</strong> One row per meter configuration</p>
 <p class='muted'><strong>Domain:</strong> Endpoints &amp; Meters</p>
 </div>
 <h2>Columns <span class='count'>23</span></h2>
@@ -24,11 +26,11 @@
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
 <tr><td class='num'>1</td><td><strong>METERCONFIGURATIONID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>2</td><td><strong>METERCONFIGURATIONTYPEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>NAME</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>NAME</strong></td><td>Configuration Name</td><td>VARCHAR2(50)</td><td>Yes</td><td>Name of the meter configuration.</td></tr>
 <tr><td class='num'>4</td><td><strong>DESCRIPTION</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>5</td><td><strong>METERCONFIGINTERVALDATACRC</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>6</td><td><strong>METERMODELID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>7</td><td><strong>INTERVALLENGTH</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>7</td><td><strong>INTERVALLENGTH</strong></td><td>Interval Length</td><td>NUMBER(5)</td><td>Yes</td><td>Interval length (minutes) configured on the meter.</td></tr>
 <tr><td class='num'>8</td><td><strong>BLOCKENDREADFLAG</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>9</td><td><strong>BLOCKENDPULSEFLAG</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>10</td><td><strong>INTERVALFORMATID</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>

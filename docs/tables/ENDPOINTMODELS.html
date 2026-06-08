@@ -14,17 +14,19 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Endpoints &amp; Meters<span class='sep'>/</span>ENDPOINTMODELS</div>
 <h1>ENDPOINTMODELS</h1>
+<p class='muted'>Endpoint Model</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>List of all endpoint hardware models supported by the system (e.g., RF Enhanced Integrated Focus AX).</p>
+<p><strong>Grain:</strong> One row per endpoint model</p>
 <p class='muted'><strong>Domain:</strong> Endpoints &amp; Meters</p>
 </div>
 <h2>Columns <span class='count'>47</span></h2>
 <div class='panel'>
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
-<tr><td class='num'>1</td><td><strong>ENDPOINTMODELID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>1</td><td><strong>ENDPOINTMODELID</strong></td><td>Endpoint Model Identifier</td><td>NUMBER(10)</td><td>No</td><td>Unique identifier for the endpoint model.</td></tr>
 <tr><td class='num'>2</td><td><strong>ENDPOINTTYPEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>NAME</strong></td><td></td><td>VARCHAR2(50)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>NAME</strong></td><td>Endpoint Model Name</td><td>VARCHAR2(50)</td><td>No</td><td>Model name of the meter/endpoint (e.g., RF Enhanced Integrated Focus AX).</td></tr>
 <tr><td class='num'>4</td><td><strong>ENDPOINTMODELFAMILYID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>5</td><td><strong>MULTIUTILITYCAPABLE</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>6</td><td><strong>BASEREADINGSTABLEID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>

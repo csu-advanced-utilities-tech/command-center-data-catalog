@@ -14,44 +14,46 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Endpoints &amp; Meters<span class='sep'>/</span>METERS</div>
 <h1>METERS</h1>
+<p class='muted'>Meter</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Core table of meter-specific information (meter number, program, service location, firmware, form/base/class).</p>
+<p><strong>Grain:</strong> One row per meter</p>
 <p class='muted'><strong>Domain:</strong> Endpoints &amp; Meters</p>
 </div>
 <h2>Columns <span class='count'>44</span></h2>
 <div class='panel'>
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
-<tr><td class='num'>1</td><td><strong>METERID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>1</td><td><strong>METERID</strong></td><td>Meter Identifier</td><td>NUMBER(10)</td><td>No</td><td>Internal unique identifier for the meter (primary key).</td></tr>
 <tr><td class='num'>2</td><td><strong>ORGANIZATIONID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>METERNO</strong></td><td></td><td>VARCHAR2(20)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>4</td><td><strong>SERIALNUMBER</strong></td><td></td><td>VARCHAR2(20)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>METERNO</strong></td><td>Meter Number</td><td>VARCHAR2(20)</td><td>No</td><td>The meter&#x27;s name - shown on the meter information screen and written on the meter.</td></tr>
+<tr><td class='num'>4</td><td><strong>SERIALNUMBER</strong></td><td>Meter Serial Number</td><td>VARCHAR2(20)</td><td>Yes</td><td>Manufacturer serial number of the meter.</td></tr>
 <tr><td class='num'>5</td><td><strong>SEALNUMBER</strong></td><td></td><td>VARCHAR2(20)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>6</td><td><strong>SEALNUMBER2</strong></td><td></td><td>VARCHAR2(20)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>7</td><td><strong>ARCHIVE</strong></td><td></td><td>NUMBER(1)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>8</td><td><strong>BILLINGCYCLEID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>8</td><td><strong>BILLINGCYCLEID</strong></td><td>Billing Cycle Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>Billing cycle the meter belongs to.</td></tr>
 <tr><td class='num'>9</td><td><strong>MAPLOCATIONID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>10</td><td><strong>MSOBJECTID</strong></td><td></td><td>VARCHAR2(20)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>11</td><td><strong>METERTYPEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>12</td><td><strong>MULTIPLIER</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>11</td><td><strong>METERTYPEID</strong></td><td>Meter Type Identifier</td><td>NUMBER(3)</td><td>No</td><td>Type of meter: 1=electric, 2=water, 3=gas, 4=unspecified, 5=router.</td></tr>
+<tr><td class='num'>12</td><td><strong>MULTIPLIER</strong></td><td>Multiplier</td><td>NUMBER(10)</td><td>Yes</td><td>Multiplier applied to raw register reads.</td></tr>
 <tr><td class='num'>13</td><td><strong>DEMANDMULTIPLIER</strong></td><td></td><td>FLOAT(126)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>14</td><td><strong>CONNECTIVITYCHANGEDDATE</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>15</td><td><strong>CUSTOMEROUTAGEDATE</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>16</td><td><strong>SUBSTATIONCODEID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>17</td><td><strong>CUSTOMERID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>18</td><td><strong>SERVICELOCATIONID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>19</td><td><strong>CUSTOM1</strong></td><td></td><td>VARCHAR2(255)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>20</td><td><strong>CUSTOM2</strong></td><td></td><td>VARCHAR2(255)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>17</td><td><strong>CUSTOMERID</strong></td><td>Customer Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>Customer associated with the meter.</td></tr>
+<tr><td class='num'>18</td><td><strong>SERVICELOCATIONID</strong></td><td>Service Location Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>Service location where the meter is installed.</td></tr>
+<tr><td class='num'>19</td><td><strong>CUSTOM1</strong></td><td>Custom Field 1</td><td>VARCHAR2(255)</td><td>Yes</td><td>Utility-defined custom attribute.</td></tr>
+<tr><td class='num'>20</td><td><strong>CUSTOM2</strong></td><td>Custom Field 2</td><td>VARCHAR2(255)</td><td>Yes</td><td>Utility-defined custom attribute.</td></tr>
 <tr><td class='num'>21</td><td><strong>LINESECTIONID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>22</td><td><strong>FORM</strong></td><td></td><td>VARCHAR2(20)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>23</td><td><strong>BASE</strong></td><td></td><td>VARCHAR2(20)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>24</td><td><strong>CLASS</strong></td><td></td><td>VARCHAR2(20)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>25</td><td><strong>FIRMWAREVERSION</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>22</td><td><strong>FORM</strong></td><td>Meter Form</td><td>VARCHAR2(20)</td><td>Yes</td><td>ANSI meter form factor.</td></tr>
+<tr><td class='num'>23</td><td><strong>BASE</strong></td><td>Meter Base</td><td>VARCHAR2(20)</td><td>Yes</td><td>Meter base type.</td></tr>
+<tr><td class='num'>24</td><td><strong>CLASS</strong></td><td>Meter Class</td><td>VARCHAR2(20)</td><td>Yes</td><td>Meter class rating.</td></tr>
+<tr><td class='num'>25</td><td><strong>FIRMWAREVERSION</strong></td><td>Meter Firmware Version</td><td>VARCHAR2(50)</td><td>Yes</td><td>Firmware version running on the meter.</td></tr>
 <tr><td class='num'>26</td><td><strong>ANSIIDNTYCD</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>27</td><td><strong>LASTMETERPRGDTM</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>28</td><td><strong>UNITOFMEASURE</strong></td><td></td><td>VARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>29</td><td><strong>GASMTRCNSTNTRT</strong></td><td></td><td>NUMBER(22,8)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>30</td><td><strong>METERPGMCD</strong></td><td></td><td>VARCHAR2(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>30</td><td><strong>METERPGMCD</strong></td><td>Meter Program Code</td><td>VARCHAR2(10)</td><td>Yes</td><td>The meter program ID (program loaded on the meter).</td></tr>
 <tr><td class='num'>31</td><td><strong>METEREXTENSIONATTRIBUTE1</strong></td><td></td><td>VARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>32</td><td><strong>DLMSSCRTYPWDID</strong></td><td></td><td>NUMBER(22)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>33</td><td><strong>UPDATELOCATIONFLG</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>

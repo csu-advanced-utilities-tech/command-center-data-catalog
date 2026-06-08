@@ -14,8 +14,10 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Grouping &amp; Org<span class='sep'>/</span>GROUPTYPES</div>
 <h1>GROUPTYPES</h1>
+<p class='muted'>Group Type</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Names of the group types supported by the system (e.g., Collector Group, RF Virtual Addressing, Scheduled Reads, User Defined).</p>
+<p><strong>Grain:</strong> One row per group type</p>
 <p class='muted'><strong>Domain:</strong> Grouping &amp; Org</p>
 </div>
 <h2>Columns <span class='count'>8</span></h2>
@@ -23,8 +25,8 @@
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
 <tr><td class='num'>1</td><td><strong>GROUPTYPEID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>2</td><td><strong>NAME</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>NOTES</strong></td><td></td><td>VARCHAR2(255)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>2</td><td><strong>NAME</strong></td><td>Group Type Name</td><td>VARCHAR2(50)</td><td>Yes</td><td>Name of the group type (e.g., Collector Group, User Defined).</td></tr>
+<tr><td class='num'>3</td><td><strong>NOTES</strong></td><td>Notes</td><td>VARCHAR2(255)</td><td>Yes</td><td>Notes describing the group type.</td></tr>
 <tr><td class='num'>4</td><td><strong>VIRTUAL</strong></td><td></td><td>NUMBER(1)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>5</td><td><strong>ENDPOINTGROUPTYPE</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>6</td><td><strong>SYSTEMGROUP</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>

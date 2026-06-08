@@ -18,8 +18,8 @@
 <div class='stats'>
   <div class='stat'><span class='num'>43</span><span class='label'>Tables</span></div>
   <div class='stat'><span class='num'>885</span><span class='label'>Columns</span></div>
-  <div class='stat'><span class='num'>1</span><span class='label'>Documented</span></div>
-  <div class='stat'><span class='num'>2%</span><span class='label'>Coverage</span></div>
+  <div class='stat'><span class='num'>43</span><span class='label'>Documented</span></div>
+  <div class='stat'><span class='num'>100%</span><span class='label'>Coverage</span></div>
 </div>
 </div>
 <input type='text' id='searchInput' placeholder='Search tables by name, description, or domain...'>
@@ -29,9 +29,9 @@
 <table class='catalog-table'>
 <thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
 <tbody>
-<tr><td><a class='tname' href='tables/ADDRESS.html'>ADDRESS</a></td><td>Address</td><td>Stores addresses from installation records and customer information uploads</td><td class='num'>7</td></tr>
-<tr><td><a class='tname' href='tables/GPSLOCATIONS.html'>GPSLOCATIONS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>6</td></tr>
-<tr><td><a class='tname' href='tables/SERVICELOCATIONS.html'>SERVICELOCATIONS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>16</td></tr>
+<tr><td><a class='tname' href='tables/ADDRESS.html'>ADDRESS</a></td><td>Address</td><td>Stores addresses (street, city, state, zip) from installation records and customer information uploads.</td><td class='num'>7</td></tr>
+<tr><td><a class='tname' href='tables/GPSLOCATIONS.html'>GPSLOCATIONS</a></td><td>GPS Location</td><td>Latitude/longitude for a meter or collector; entered during installation import (layered routing) or read from the meter (geolocated routing).</td><td class='num'>6</td></tr>
+<tr><td><a class='tname' href='tables/SERVICELOCATIONS.html'>SERVICELOCATIONS</a></td><td>Service Location</td><td>Service-location information for meters, provided by the utility at installation. SERVLOC is the reference number.</td><td class='num'>16</td></tr>
 </tbody>
 </table>
 </div>
@@ -42,12 +42,12 @@
 <table class='catalog-table'>
 <thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
 <tbody>
-<tr><td><a class='tname' href='tables/ENDPOINTMETERCONFIGURATION.html'>ENDPOINTMETERCONFIGURATION</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>4</td></tr>
-<tr><td><a class='tname' href='tables/ENDPOINTMODELS.html'>ENDPOINTMODELS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>47</td></tr>
-<tr><td><a class='tname' href='tables/ENDPOINTS.html'>ENDPOINTS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>105</td></tr>
-<tr><td><a class='tname' href='tables/METERCONFIGURATION.html'>METERCONFIGURATION</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>23</td></tr>
-<tr><td><a class='tname' href='tables/METERS.html'>METERS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>44</td></tr>
-<tr><td><a class='tname' href='tables/RFENDPOINTPROPERTIES.html'>RFENDPOINTPROPERTIES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>101</td></tr>
+<tr><td><a class='tname' href='tables/ENDPOINTMETERCONFIGURATION.html'>ENDPOINTMETERCONFIGURATION</a></td><td>Endpoint Meter Configuration</td><td>Links an endpoint to its meter program, meter program factor, and meter configuration.</td><td class='num'>4</td></tr>
+<tr><td><a class='tname' href='tables/ENDPOINTMODELS.html'>ENDPOINTMODELS</a></td><td>Endpoint Model</td><td>List of all endpoint hardware models supported by the system (e.g., RF Enhanced Integrated Focus AX).</td><td class='num'>47</td></tr>
+<tr><td><a class='tname' href='tables/ENDPOINTS.html'>ENDPOINTS</a></td><td>Endpoint</td><td>Communication modules placed in meters that electronically collect and report usage. Each endpoint is uniquely identified by a factory-assigned serial number.</td><td class='num'>105</td></tr>
+<tr><td><a class='tname' href='tables/METERCONFIGURATION.html'>METERCONFIGURATION</a></td><td>Meter Configuration</td><td>Meter configuration definitions including interval length and program data.</td><td class='num'>23</td></tr>
+<tr><td><a class='tname' href='tables/METERS.html'>METERS</a></td><td>Meter</td><td>Core table of meter-specific information (meter number, program, service location, firmware, form/base/class).</td><td class='num'>44</td></tr>
+<tr><td><a class='tname' href='tables/RFENDPOINTPROPERTIES.html'>RFENDPOINTPROPERTIES</a></td><td>RF Endpoint Properties</td><td>Additional RF/endpoint detail and properties (DCW version, neighbor count, mesh layer/path, firmware activation).</td><td class='num'>101</td></tr>
 </tbody>
 </table>
 </div>
@@ -58,9 +58,9 @@
 <table class='catalog-table'>
 <thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
 <tbody>
-<tr><td><a class='tname' href='tables/COLLECTORS.html'>COLLECTORS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>36</td></tr>
-<tr><td><a class='tname' href='tables/COLLECTORSTATS.html'>COLLECTORSTATS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>27</td></tr>
-<tr><td><a class='tname' href='tables/RSSDEVICES.html'>RSSDEVICES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>11</td></tr>
+<tr><td><a class='tname' href='tables/COLLECTORS.html'>COLLECTORS</a></td><td>Collector</td><td>List of collectors (formerly called SPUs). Stores general properties common to all collector types (PLC or RF).</td><td class='num'>36</td></tr>
+<tr><td><a class='tname' href='tables/COLLECTORSTATS.html'>COLLECTORSTATS</a></td><td>Collector Statistics</td><td>Daily per-collector performance statistics: published vs expected readings, gaps, comm failures, mesh layers, and data/network scores.</td><td class='num'>27</td></tr>
+<tr><td><a class='tname' href='tables/RSSDEVICES.html'>RSSDEVICES</a></td><td>Remote Service Switch Device</td><td>Remote service switch (disconnect) device state per endpoint - armed/connect status and last change.</td><td class='num'>11</td></tr>
 </tbody>
 </table>
 </div>
@@ -71,11 +71,11 @@
 <table class='catalog-table'>
 <thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
 <tbody>
-<tr><td><a class='tname' href='tables/IDREADINGLATESTVALUES.html'>IDREADINGLATESTVALUES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>7</td></tr>
-<tr><td><a class='tname' href='tables/IDREADINGLOGS.html'>IDREADINGLOGS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>16</td></tr>
-<tr><td><a class='tname' href='tables/INTERVALDATA.html'>INTERVALDATA</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>15</td></tr>
-<tr><td><a class='tname' href='tables/INTERVALDATALATESTVALUES.html'>INTERVALDATALATESTVALUES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>9</td></tr>
-<tr><td><a class='tname' href='tables/INTERVALTYPES.html'>INTERVALTYPES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>4</td></tr>
+<tr><td><a class='tname' href='tables/IDREADINGLATESTVALUES.html'>IDREADINGLATESTVALUES</a></td><td>Daily Reading - Latest</td><td>Most recent daily reading value per endpoint and data definition.</td><td class='num'>7</td></tr>
+<tr><td><a class='tname' href='tables/IDREADINGLOGS.html'>IDREADINGLOGS</a></td><td>Daily Reading Log</td><td>Daily (self) reads received from meters; each data definition is a different read type (kWh, kVAR, etc.). Very large and fast-changing table - slow to query.</td><td class='num'>16</td></tr>
+<tr><td><a class='tname' href='tables/INTERVALDATA.html'>INTERVALDATA</a></td><td>Interval Data (Load Profile)</td><td>Meter readings at fixed intervals (e.g., every 15 minutes) used for billing and load profile (LP). Very large and fast-changing table - slow to query.</td><td class='num'>15</td></tr>
+<tr><td><a class='tname' href='tables/INTERVALDATALATESTVALUES.html'>INTERVALDATALATESTVALUES</a></td><td>Interval Data - Latest</td><td>Last received interval/load-profile value per endpoint.</td><td class='num'>9</td></tr>
+<tr><td><a class='tname' href='tables/INTERVALTYPES.html'>INTERVALTYPES</a></td><td>Interval Type</td><td>Code table of interval types and their length in seconds (e.g., 900 = 15 minutes).</td><td class='num'>4</td></tr>
 </tbody>
 </table>
 </div>
@@ -86,12 +86,12 @@
 <table class='catalog-table'>
 <thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
 <tbody>
-<tr><td><a class='tname' href='tables/COMMANDLOG.html'>COMMANDLOG</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>29</td></tr>
-<tr><td><a class='tname' href='tables/COMMANDRESPONSE.html'>COMMANDRESPONSE</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>9</td></tr>
-<tr><td><a class='tname' href='tables/COMMANDSSENT.html'>COMMANDSSENT</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>17</td></tr>
-<tr><td><a class='tname' href='tables/COMMANDSTATUSCODES.html'>COMMANDSTATUSCODES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>4</td></tr>
-<tr><td><a class='tname' href='tables/COMMANDTYPES.html'>COMMANDTYPES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>15</td></tr>
-<tr><td><a class='tname' href='tables/PACKETTYPES.html'>PACKETTYPES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>2</td></tr>
+<tr><td><a class='tname' href='tables/COMMANDLOG.html'>COMMANDLOG</a></td><td>Command Log</td><td>Commands issued by the Central Server. A single command may fan out to multiple collectors. Very large and fast-changing table - slow to query.</td><td class='num'>29</td></tr>
+<tr><td><a class='tname' href='tables/COMMANDRESPONSE.html'>COMMANDRESPONSE</a></td><td>Command Response</td><td>Stores the status and response received for sent commands.</td><td class='num'>9</td></tr>
+<tr><td><a class='tname' href='tables/COMMANDSSENT.html'>COMMANDSSENT</a></td><td>Commands Sent</td><td>Tracks the sending of messages to collectors and ties a command to one or more collectors, with sent and completed timestamps.</td><td class='num'>17</td></tr>
+<tr><td><a class='tname' href='tables/COMMANDSTATUSCODES.html'>COMMANDSTATUSCODES</a></td><td>Command Status Code</td><td>Code table of downstream command status codes (DISPLAYNAME).</td><td class='num'>4</td></tr>
+<tr><td><a class='tname' href='tables/COMMANDTYPES.html'>COMMANDTYPES</a></td><td>Command Type</td><td>Code table of the types of commands the Central Server can issue, with priority.</td><td class='num'>15</td></tr>
+<tr><td><a class='tname' href='tables/PACKETTYPES.html'>PACKETTYPES</a></td><td>Packet Type</td><td>Code table of packet types (e.g., 8 = Published, 9 = Gap Analysis, on-demand).</td><td class='num'>2</td></tr>
 </tbody>
 </table>
 </div>
@@ -102,12 +102,12 @@
 <table class='catalog-table'>
 <thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
 <tbody>
-<tr><td><a class='tname' href='tables/ENDPOINTSTATUSCODEHISTORY.html'>ENDPOINTSTATUSCODEHISTORY</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>4</td></tr>
-<tr><td><a class='tname' href='tables/ERRORLOG.html'>ERRORLOG</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>13</td></tr>
-<tr><td><a class='tname' href='tables/ERRORTYPES.html'>ERRORTYPES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>6</td></tr>
-<tr><td><a class='tname' href='tables/EVENTLOG.html'>EVENTLOG</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>18</td></tr>
-<tr><td><a class='tname' href='tables/EVENTTYPES.html'>EVENTTYPES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>8</td></tr>
-<tr><td><a class='tname' href='tables/STATUSCODES.html'>STATUSCODES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>8</td></tr>
+<tr><td><a class='tname' href='tables/ENDPOINTSTATUSCODEHISTORY.html'>ENDPOINTSTATUSCODEHISTORY</a></td><td>Endpoint Status History</td><td>History of status-code changes for an endpoint, with effective dates.</td><td class='num'>4</td></tr>
+<tr><td><a class='tname' href='tables/ERRORLOG.html'>ERRORLOG</a></td><td>Error Log</td><td>Errors occurring in Command Center software and functionality (system, collectors, endpoints, communication, data). Key for administrator troubleshooting.</td><td class='num'>13</td></tr>
+<tr><td><a class='tname' href='tables/ERRORTYPES.html'>ERRORTYPES</a></td><td>Error Type</td><td>Code table of all error types, with severity and category.</td><td class='num'>6</td></tr>
+<tr><td><a class='tname' href='tables/EVENTLOG.html'>EVENTLOG</a></td><td>Event Log</td><td>Alerts and events sent by endpoints and collectors (e.g., power outage/restore, demand reset, meter programming complete). Very large and fast-changing table - slow to query.</td><td class='num'>18</td></tr>
+<tr><td><a class='tname' href='tables/EVENTTYPES.html'>EVENTTYPES</a></td><td>Event Type</td><td>Names of the event types sent to Command Center.</td><td class='num'>8</td></tr>
+<tr><td><a class='tname' href='tables/STATUSCODES.html'>STATUSCODES</a></td><td>Status Code</td><td>Maps a status ID to a status name for meters/endpoints (e.g., 8 = Normal, 1 = Inventory, 6 = Lost).</td><td class='num'>8</td></tr>
 </tbody>
 </table>
 </div>
@@ -118,11 +118,11 @@
 <table class='catalog-table'>
 <thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
 <tbody>
-<tr><td><a class='tname' href='tables/BILLINGCYCLES.html'>BILLINGCYCLES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>5</td></tr>
-<tr><td><a class='tname' href='tables/PLANS.html'>PLANS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>10</td></tr>
-<tr><td><a class='tname' href='tables/PLANSCHEDULES.html'>PLANSCHEDULES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>17</td></tr>
-<tr><td><a class='tname' href='tables/PLANTYPES.html'>PLANTYPES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>2</td></tr>
-<tr><td><a class='tname' href='tables/READ_SCHEDULE.html'>READ_SCHEDULE</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>7</td></tr>
+<tr><td><a class='tname' href='tables/BILLINGCYCLES.html'>BILLINGCYCLES</a></td><td>Billing Cycle</td><td>Lists the billing cycles; the NAME field holds the cycle as a text value. A meter belongs to exactly one cycle.</td><td class='num'>5</td></tr>
+<tr><td><a class='tname' href='tables/PLANS.html'>PLANS</a></td><td>Plan</td><td>Definitions of scheduled plans/tasks (e.g., scheduled reads) run by Command Center.</td><td class='num'>10</td></tr>
+<tr><td><a class='tname' href='tables/PLANSCHEDULES.html'>PLANSCHEDULES</a></td><td>Plan Schedule</td><td>Schedule definitions (recurrence, start/end, next run) for plans.</td><td class='num'>17</td></tr>
+<tr><td><a class='tname' href='tables/PLANTYPES.html'>PLANTYPES</a></td><td>Plan Type</td><td>Code table naming the types of plans.</td><td class='num'>2</td></tr>
+<tr><td><a class='tname' href='tables/READ_SCHEDULE.html'>READ_SCHEDULE</a></td><td>Read Schedule</td><td>Billing read schedule by utility and billing cycle (read date and allowable install/read windows).</td><td class='num'>7</td></tr>
 </tbody>
 </table>
 </div>
@@ -133,9 +133,9 @@
 <table class='catalog-table'>
 <thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
 <tbody>
-<tr><td><a class='tname' href='tables/ENDPOINTGROUPASSOC.html'>ENDPOINTGROUPASSOC</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>4</td></tr>
-<tr><td><a class='tname' href='tables/GROUPS.html'>GROUPS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>15</td></tr>
-<tr><td><a class='tname' href='tables/GROUPTYPES.html'>GROUPTYPES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>8</td></tr>
+<tr><td><a class='tname' href='tables/ENDPOINTGROUPASSOC.html'>ENDPOINTGROUPASSOC</a></td><td>Endpoint-Group Association</td><td>Associates an endpoint with a group (group membership), with creation timestamp.</td><td class='num'>4</td></tr>
+<tr><td><a class='tname' href='tables/GROUPS.html'>GROUPS</a></td><td>Group</td><td>Logical collections of endpoints used to manage and query meters; several group types exist.</td><td class='num'>15</td></tr>
+<tr><td><a class='tname' href='tables/GROUPTYPES.html'>GROUPTYPES</a></td><td>Group Type</td><td>Names of the group types supported by the system (e.g., Collector Group, RF Virtual Addressing, Scheduled Reads, User Defined).</td><td class='num'>8</td></tr>
 </tbody>
 </table>
 </div>
@@ -146,12 +146,12 @@
 <table class='catalog-table'>
 <thead><tr><th>Table</th><th>Business Name</th><th>Description</th><th class='num'>Cols</th></tr></thead>
 <tbody>
-<tr><td><a class='tname' href='tables/DATABASE_MAINT_ARCHIVE.html'>DATABASE_MAINT_ARCHIVE</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>117</td></tr>
-<tr><td><a class='tname' href='tables/DATADEFINITIONS.html'>DATADEFINITIONS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>35</td></tr>
-<tr><td><a class='tname' href='tables/ENDPOINTDEPLOYMENTSTATISTICS.html'>ENDPOINTDEPLOYMENTSTATISTICS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>14</td></tr>
-<tr><td><a class='tname' href='tables/ENDPOINTNOTES.html'>ENDPOINTNOTES</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>6</td></tr>
-<tr><td><a class='tname' href='tables/USERROLE.html'>USERROLE</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>2</td></tr>
-<tr><td><a class='tname' href='tables/USERS.html'>USERS</a></td><td></td><td><span class='undocumented'>—</span></td><td class='num'>32</td></tr>
+<tr><td><a class='tname' href='tables/DATABASE_MAINT_ARCHIVE.html'>DATABASE_MAINT_ARCHIVE</a></td><td>Database Maintenance Archive</td><td>Archive/staging table of legacy meter, service, and customer attributes used for database maintenance and migration.</td><td class='num'>117</td></tr>
+<tr><td><a class='tname' href='tables/DATADEFINITIONS.html'>DATADEFINITIONS</a></td><td>Data Definition</td><td>Lists the data types that can be received from an endpoint and that correlate to meter reads (e.g., kWh, current, voltage).</td><td class='num'>35</td></tr>
+<tr><td><a class='tname' href='tables/ENDPOINTDEPLOYMENTSTATISTICS.html'>ENDPOINTDEPLOYMENTSTATISTICS</a></td><td>Endpoint Deployment Statistics</td><td>First and last dates an RF endpoint changed key statuses (Installed, Normal, Discovered, RF-registered, removed).</td><td class='num'>14</td></tr>
+<tr><td><a class='tname' href='tables/ENDPOINTNOTES.html'>ENDPOINTNOTES</a></td><td>Endpoint Note</td><td>Free-text notes attached to an endpoint by a user.</td><td class='num'>6</td></tr>
+<tr><td><a class='tname' href='tables/USERROLE.html'>USERROLE</a></td><td>User Role</td><td>Associates users to roles for access control.</td><td class='num'>2</td></tr>
+<tr><td><a class='tname' href='tables/USERS.html'>USERS</a></td><td>User</td><td>Command Center user accounts (login, name, contact, lockout).</td><td class='num'>32</td></tr>
 </tbody>
 </table>
 </div>

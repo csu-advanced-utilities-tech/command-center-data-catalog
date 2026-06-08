@@ -14,19 +14,21 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Interval &amp; Register Reads<span class='sep'>/</span>IDREADINGLATESTVALUES</div>
 <h1>IDREADINGLATESTVALUES</h1>
+<p class='muted'>Daily Reading - Latest</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Most recent daily reading value per endpoint and data definition.</p>
+<p><strong>Grain:</strong> One row per endpoint per data definition</p>
 <p class='muted'><strong>Domain:</strong> Interval &amp; Register Reads</p>
 </div>
 <h2>Columns <span class='count'>7</span></h2>
 <div class='panel'>
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
-<tr><td class='num'>1</td><td><strong>ENDPOINTID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>2</td><td><strong>DATADEFINITIONID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>LATESTVALUEDEC</strong></td><td></td><td>NUMBER(19,4)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>4</td><td><strong>LATESTVALUEDATE</strong></td><td></td><td>DATE(7)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>5</td><td><strong>LATESTSELFREADDATE</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>1</td><td><strong>ENDPOINTID</strong></td><td>Endpoint Identifier</td><td>NUMBER(10)</td><td>No</td><td>Endpoint for the latest daily value.</td></tr>
+<tr><td class='num'>2</td><td><strong>DATADEFINITIONID</strong></td><td>Data Definition Identifier</td><td>NUMBER(10)</td><td>No</td><td>Type of read for the latest value.</td></tr>
+<tr><td class='num'>3</td><td><strong>LATESTVALUEDEC</strong></td><td>Latest Value (Decimal)</td><td>NUMBER(19,4)</td><td>No</td><td>Most recent daily reading value.</td></tr>
+<tr><td class='num'>4</td><td><strong>LATESTVALUEDATE</strong></td><td>Latest Value Date</td><td>DATE(7)</td><td>No</td><td>Date/time of the most recent daily reading value.</td></tr>
+<tr><td class='num'>5</td><td><strong>LATESTSELFREADDATE</strong></td><td>Latest Self-Read Date</td><td>DATE(7)</td><td>Yes</td><td>Date of the most recent self-read.</td></tr>
 <tr><td class='num'>6</td><td><strong>LATESTDAILYVALUEDEC</strong></td><td></td><td>NUMBER(19,4)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>7</td><td><strong>LATESTDAILYVALUEDATE</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 </tbody></table>

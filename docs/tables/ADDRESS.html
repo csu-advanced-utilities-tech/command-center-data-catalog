@@ -16,7 +16,7 @@
 <h1>ADDRESS</h1>
 <p class='muted'>Address</p>
 <div class='panel pad'>
-<p>Stores addresses from installation records and customer information uploads</p>
+<p>Stores addresses (street, city, state, zip) from installation records and customer information uploads.</p>
 <p><strong>Grain:</strong> One row per unique address</p>
 <p class='muted'><strong>Domain:</strong> Premises &amp; Locations</p>
 </div>
@@ -26,11 +26,11 @@
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
 <tr><td class='num'>1</td><td><strong>ADDRESSID</strong></td><td>Address Identifier</td><td>NUMBER(10)</td><td>No</td><td>Unique identifier assigned to each address record.</td></tr>
 <tr><td class='num'>2</td><td><strong>ADDRESSLINE1</strong></td><td>Address Line 1</td><td>NVARCHAR2(200)</td><td>Yes</td><td>Primary street address line.</td></tr>
-<tr><td class='num'>3</td><td><strong>ADDRESSLINE2</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>ADDRESSLINE2</strong></td><td>Address Line 2</td><td>NVARCHAR2(100)</td><td>Yes</td><td>Secondary street address line.</td></tr>
 <tr><td class='num'>4</td><td><strong>ADDRESSLINE3</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>5</td><td><strong>CITY</strong></td><td>City</td><td>NVARCHAR2(56)</td><td>Yes</td><td>City name associated with the address.</td></tr>
-<tr><td class='num'>6</td><td><strong>STATE</strong></td><td></td><td>NVARCHAR2(40)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>7</td><td><strong>ZIP</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>6</td><td><strong>STATE</strong></td><td>State</td><td>NVARCHAR2(40)</td><td>Yes</td><td>State associated with the address.</td></tr>
+<tr><td class='num'>7</td><td><strong>ZIP</strong></td><td>ZIP Code</td><td>NVARCHAR2(100)</td><td>Yes</td><td>Postal/ZIP code associated with the address.</td></tr>
 </tbody></table>
 </div>
 </div>

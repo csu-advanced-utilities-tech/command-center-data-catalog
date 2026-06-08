@@ -14,20 +14,22 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Endpoints &amp; Meters<span class='sep'>/</span>ENDPOINTS</div>
 <h1>ENDPOINTS</h1>
+<p class='muted'>Endpoint</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Communication modules placed in meters that electronically collect and report usage. Each endpoint is uniquely identified by a factory-assigned serial number.</p>
+<p><strong>Grain:</strong> One row per endpoint</p>
 <p class='muted'><strong>Domain:</strong> Endpoints &amp; Meters</p>
 </div>
 <h2>Columns <span class='count'>105</span></h2>
 <div class='panel'>
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
-<tr><td class='num'>1</td><td><strong>ENDPOINTID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>2</td><td><strong>SERIALNUMBER</strong></td><td></td><td>VARCHAR2(30)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>1</td><td><strong>ENDPOINTID</strong></td><td>Endpoint Identifier</td><td>NUMBER(10)</td><td>No</td><td>Internal unique identifier for the endpoint (primary key).</td></tr>
+<tr><td class='num'>2</td><td><strong>SERIALNUMBER</strong></td><td>Endpoint Serial Number</td><td>VARCHAR2(30)</td><td>No</td><td>Communications-module LAN ID (decimal) shown on the meter info screen.</td></tr>
 <tr><td class='num'>3</td><td><strong>ENDPOINTTYPEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>4</td><td><strong>METERID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>5</td><td><strong>STATUSCODEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>6</td><td><strong>SPUID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>4</td><td><strong>METERID</strong></td><td>Meter Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>The meter this endpoint is installed in.</td></tr>
+<tr><td class='num'>5</td><td><strong>STATUSCODEID</strong></td><td>Status Code Identifier</td><td>NUMBER(3)</td><td>No</td><td>Current status of the endpoint.</td></tr>
+<tr><td class='num'>6</td><td><strong>SPUID</strong></td><td>Collector Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>The collector (SPU) the endpoint reports through.</td></tr>
 <tr><td class='num'>7</td><td><strong>PREVSPUID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>8</td><td><strong>FIRMWAREID</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>9</td><td><strong>INPUTSELECT</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
@@ -41,17 +43,17 @@
 <tr><td class='num'>17</td><td><strong>RECONFIGDATE</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>18</td><td><strong>NOTES</strong></td><td></td><td>NVARCHAR2(510)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>19</td><td><strong>ORGANIZATIONID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>20</td><td><strong>CONFIGURATIONGROUPID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>20</td><td><strong>CONFIGURATIONGROUPID</strong></td><td>Configuration Group Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>Configuration group the endpoint belongs to.</td></tr>
 <tr><td class='num'>21</td><td><strong>ARCHIVE</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>22</td><td><strong>RECONFIGRETRIES</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>23</td><td><strong>LASTSTATUSCHANGED</strong></td><td></td><td>DATE(7)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>23</td><td><strong>LASTSTATUSCHANGED</strong></td><td>Last Status Changed</td><td>DATE(7)</td><td>No</td><td>Date the endpoint last changed status (e.g., Normal to Lost).</td></tr>
 <tr><td class='num'>24</td><td><strong>GOODPACKETCOUNT</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>25</td><td><strong>LASTGOODPACKET</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>26</td><td><strong>DEMANDRESET</strong></td><td></td><td>NUMBER(1)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>27</td><td><strong>LASTRESETDAY</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>28</td><td><strong>METERGROUPCRC</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>29</td><td><strong>LOWSIGNALSTART</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>30</td><td><strong>LASTBILLABLEREAD</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>30</td><td><strong>LASTBILLABLEREAD</strong></td><td>Last Billable Read</td><td>DATE(7)</td><td>Yes</td><td>Date of the most recent billing read (midnight self-read or interval).</td></tr>
 <tr><td class='num'>31</td><td><strong>USAGEVIOLATIONDATE</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>32</td><td><strong>ENDPOINTMODELID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>33</td><td><strong>HEALTHSTART</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
@@ -75,7 +77,7 @@
 <tr><td class='num'>51</td><td><strong>DEMANDRESETGROUPID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>52</td><td><strong>NOTLOGGINGEXCLUSIONDATE</strong></td><td></td><td>DATE(7)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>53</td><td><strong>SERIALNUMBERINVALID</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>54</td><td><strong>HWMODELID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>54</td><td><strong>HWMODELID</strong></td><td>Hardware Model Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>Endpoint hardware model.</td></tr>
 <tr><td class='num'>55</td><td><strong>SUSPECTOUTAGEDATE</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>56</td><td><strong>NETMETERINGENABLED</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>57</td><td><strong>ROLLINGKWENABLED</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
@@ -88,11 +90,11 @@
 <tr><td class='num'>64</td><td><strong>TOUMODECONFIRMATIONPENDING</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>65</td><td><strong>SENDINTERVALDATA</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>66</td><td><strong>SENDSETGROUPS</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>67</td><td><strong>FIRMWAREVERSION</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>68</td><td><strong>ZIGBEEFIRMWAREVERSION</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>67</td><td><strong>FIRMWAREVERSION</strong></td><td>Module Firmware Version</td><td>VARCHAR2(50)</td><td>Yes</td><td>Firmware version on the communications module.</td></tr>
+<tr><td class='num'>68</td><td><strong>ZIGBEEFIRMWAREVERSION</strong></td><td>Zigbee Firmware Version</td><td>VARCHAR2(50)</td><td>Yes</td><td>Zigbee (HAN) firmware version on the endpoint.</td></tr>
 <tr><td class='num'>69</td><td><strong>NEEDSINITIALREADASYNCREQUEST</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>70</td><td><strong>FAILEDWORKFLOWTYPEID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>71</td><td><strong>LASTPACKETRECEIVED</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>71</td><td><strong>LASTPACKETRECEIVED</strong></td><td>Last Packet Received</td><td>DATE(7)</td><td>Yes</td><td>Timestamp of the last packet received from the endpoint.</td></tr>
 <tr><td class='num'>72</td><td><strong>SENDSETSEQUENCEBP</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>73</td><td><strong>SENDSETCALENDAR</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>74</td><td><strong>SENDSETINTERVALCONFIG</strong></td><td></td><td>NUMBER(1)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>

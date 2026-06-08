@@ -14,16 +14,18 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Events, Errors &amp; Status<span class='sep'>/</span>STATUSCODES</div>
 <h1>STATUSCODES</h1>
+<p class='muted'>Status Code</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Maps a status ID to a status name for meters/endpoints (e.g., 8 = Normal, 1 = Inventory, 6 = Lost).</p>
+<p><strong>Grain:</strong> One row per status code</p>
 <p class='muted'><strong>Domain:</strong> Events, Errors &amp; Status</p>
 </div>
 <h2>Columns <span class='count'>8</span></h2>
 <div class='panel'>
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
-<tr><td class='num'>1</td><td><strong>STATUSCODEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>2</td><td><strong>NAME</strong></td><td></td><td>VARCHAR2(20)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>1</td><td><strong>STATUSCODEID</strong></td><td>Status Code Identifier</td><td>NUMBER(3)</td><td>No</td><td>Numeric status identifier.</td></tr>
+<tr><td class='num'>2</td><td><strong>NAME</strong></td><td>Status Name</td><td>VARCHAR2(20)</td><td>Yes</td><td>Status name such as Normal, Discovered, Lost, Inventory.</td></tr>
 <tr><td class='num'>3</td><td><strong>OBJECTTYPEID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>4</td><td><strong>PARENTSTATE</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>5</td><td><strong>PRIORITY</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>

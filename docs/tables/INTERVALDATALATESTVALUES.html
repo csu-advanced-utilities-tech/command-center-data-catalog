@@ -14,18 +14,20 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Interval &amp; Register Reads<span class='sep'>/</span>INTERVALDATALATESTVALUES</div>
 <h1>INTERVALDATALATESTVALUES</h1>
+<p class='muted'>Interval Data - Latest</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Last received interval/load-profile value per endpoint.</p>
+<p><strong>Grain:</strong> One row per endpoint per channel</p>
 <p class='muted'><strong>Domain:</strong> Interval &amp; Register Reads</p>
 </div>
 <h2>Columns <span class='count'>9</span></h2>
 <div class='panel'>
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
-<tr><td class='num'>1</td><td><strong>ENDPOINTID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>1</td><td><strong>ENDPOINTID</strong></td><td>Endpoint Identifier</td><td>NUMBER(10)</td><td>No</td><td>Endpoint for the latest interval value.</td></tr>
 <tr><td class='num'>2</td><td><strong>INTERVALCHANNELNO</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>INTERVALSTARTDATE</strong></td><td></td><td>DATE(7)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>4</td><td><strong>INTERVALVALUE</strong></td><td></td><td>NUMBER(19,4)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>INTERVALSTARTDATE</strong></td><td>Interval Start Date</td><td>DATE(7)</td><td>Yes</td><td>Start of the most recent interval.</td></tr>
+<tr><td class='num'>4</td><td><strong>INTERVALVALUE</strong></td><td>Interval Value</td><td>NUMBER(19,4)</td><td>Yes</td><td>Most recent interval value.</td></tr>
 <tr><td class='num'>5</td><td><strong>INTERVALTYPEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>6</td><td><strong>LASTUPDATEUTCTIME</strong></td><td></td><td>DATE(7)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>7</td><td><strong>METERID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>

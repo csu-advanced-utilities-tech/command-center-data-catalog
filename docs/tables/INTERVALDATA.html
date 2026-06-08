@@ -14,27 +14,29 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Interval &amp; Register Reads<span class='sep'>/</span>INTERVALDATA</div>
 <h1>INTERVALDATA</h1>
+<p class='muted'>Interval Data (Load Profile)</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Meter readings at fixed intervals (e.g., every 15 minutes) used for billing and load profile (LP). Very large and fast-changing table - slow to query.</p>
+<p><strong>Grain:</strong> One row per endpoint per channel per interval start</p>
 <p class='muted'><strong>Domain:</strong> Interval &amp; Register Reads</p>
 </div>
 <h2>Columns <span class='count'>15</span></h2>
 <div class='panel'>
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
-<tr><td class='num'>1</td><td><strong>ENDPOINTID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>2</td><td><strong>METERID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>INTERVALCHANNELNO</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>4</td><td><strong>INTERVALSTARTDATE</strong></td><td></td><td>DATE(7)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>5</td><td><strong>INTERVALVALUE</strong></td><td></td><td>NUMBER(19,4)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>1</td><td><strong>ENDPOINTID</strong></td><td>Endpoint Identifier</td><td>NUMBER(10)</td><td>No</td><td>Endpoint that produced the interval read.</td></tr>
+<tr><td class='num'>2</td><td><strong>METERID</strong></td><td>Meter Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>Meter associated with the interval read.</td></tr>
+<tr><td class='num'>3</td><td><strong>INTERVALCHANNELNO</strong></td><td>Interval Channel Number</td><td>NUMBER(3)</td><td>No</td><td>Channel number for the interval series.</td></tr>
+<tr><td class='num'>4</td><td><strong>INTERVALSTARTDATE</strong></td><td>Interval Start Date</td><td>DATE(7)</td><td>No</td><td>Start date/time of the interval.</td></tr>
+<tr><td class='num'>5</td><td><strong>INTERVALVALUE</strong></td><td>Interval Value</td><td>NUMBER(19,4)</td><td>Yes</td><td>Measured value for the interval.</td></tr>
 <tr><td class='num'>6</td><td><strong>LOGTIME</strong></td><td></td><td>DATE(7)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>7</td><td><strong>INTERVALTYPEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>8</td><td><strong>PACKETTYPEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>7</td><td><strong>INTERVALTYPEID</strong></td><td>Interval Type Identifier</td><td>NUMBER(3)</td><td>No</td><td>Interval length type.</td></tr>
+<tr><td class='num'>8</td><td><strong>PACKETTYPEID</strong></td><td>Packet Type Identifier</td><td>NUMBER(3)</td><td>No</td><td>How the interval data arrived.</td></tr>
 <tr><td class='num'>9</td><td><strong>RAWVALUE</strong></td><td></td><td>RAW(16)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>10</td><td><strong>OINTERVALSTARTDATE</strong></td><td></td><td>NUMBER(5)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>11</td><td><strong>COMMONINTERVALSTATUSFLAGID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>12</td><td><strong>INTERVALSTATUSID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>13</td><td><strong>DATADEFINITIONID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>13</td><td><strong>DATADEFINITIONID</strong></td><td>Data Definition Identifier</td><td>NUMBER(10)</td><td>No</td><td>Measurement type of the interval read.</td></tr>
 <tr><td class='num'>14</td><td><strong>METERBATCHID</strong></td><td></td><td>NUMBER(3)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>15</td><td><strong>INTERVALATTRIBUTES</strong></td><td></td><td>VARCHAR2(256)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 </tbody></table>

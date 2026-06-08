@@ -14,24 +14,26 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Network &amp; Collection<span class='sep'>/</span>COLLECTORS</div>
 <h1>COLLECTORS</h1>
+<p class='muted'>Collector</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>List of collectors (formerly called SPUs). Stores general properties common to all collector types (PLC or RF).</p>
+<p><strong>Grain:</strong> One row per collector</p>
 <p class='muted'><strong>Domain:</strong> Network &amp; Collection</p>
 </div>
 <h2>Columns <span class='count'>36</span></h2>
 <div class='panel'>
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
-<tr><td class='num'>1</td><td><strong>COLLECTORID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>1</td><td><strong>COLLECTORID</strong></td><td>Collector Identifier</td><td>NUMBER(10)</td><td>No</td><td>Unique identifier for the collector.</td></tr>
 <tr><td class='num'>2</td><td><strong>ORGANIZATIONID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>NAME</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>NAME</strong></td><td>Collector Name</td><td>NVARCHAR2(100)</td><td>Yes</td><td>The collector&#x27;s name.</td></tr>
 <tr><td class='num'>4</td><td><strong>NOTES</strong></td><td></td><td>NVARCHAR2(510)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>5</td><td><strong>STATUSCODEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>5</td><td><strong>STATUSCODEID</strong></td><td>Status Code Identifier</td><td>NUMBER(3)</td><td>No</td><td>Current status of the collector.</td></tr>
 <tr><td class='num'>6</td><td><strong>ARCHIVE</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>7</td><td><strong>TIMEZONECODE</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>8</td><td><strong>CONFIRMEDNAME</strong></td><td></td><td>NVARCHAR2(100)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>9</td><td><strong>COLLECTORTYPEID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>10</td><td><strong>GPSLOCATIONID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>10</td><td><strong>GPSLOCATIONID</strong></td><td>GPS Location Identifier</td><td>NUMBER(10)</td><td>Yes</td><td>GPS location of the collector.</td></tr>
 <tr><td class='num'>11</td><td><strong>IPADDRESS</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>12</td><td><strong>PORT</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>13</td><td><strong>COLLECTORCOMMANDMODELTYPEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>

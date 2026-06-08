@@ -14,8 +14,10 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Interval &amp; Register Reads<span class='sep'>/</span>INTERVALTYPES</div>
 <h1>INTERVALTYPES</h1>
+<p class='muted'>Interval Type</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Code table of interval types and their length in seconds (e.g., 900 = 15 minutes).</p>
+<p><strong>Grain:</strong> One row per interval type</p>
 <p class='muted'><strong>Domain:</strong> Interval &amp; Register Reads</p>
 </div>
 <h2>Columns <span class='count'>4</span></h2>
@@ -23,8 +25,8 @@
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
 <tr><td class='num'>1</td><td><strong>INTERVALTYPEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>2</td><td><strong>DESCRIPTION</strong></td><td></td><td>VARCHAR2(64)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>INTERVALSECONDS</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>2</td><td><strong>DESCRIPTION</strong></td><td>Interval Type Description</td><td>VARCHAR2(64)</td><td>No</td><td>Description of the interval type.</td></tr>
+<tr><td class='num'>3</td><td><strong>INTERVALSECONDS</strong></td><td>Interval Seconds</td><td>NUMBER(10)</td><td>No</td><td>Length of the interval in seconds.</td></tr>
 <tr><td class='num'>4</td><td><strong>ISFULLREGREADFLG</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 </tbody></table>
 </div>

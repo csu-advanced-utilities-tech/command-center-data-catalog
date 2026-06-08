@@ -14,8 +14,10 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Commands &amp; Control<span class='sep'>/</span>COMMANDSTATUSCODES</div>
 <h1>COMMANDSTATUSCODES</h1>
+<p class='muted'>Command Status Code</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Code table of downstream command status codes (DISPLAYNAME).</p>
+<p><strong>Grain:</strong> One row per command status code</p>
 <p class='muted'><strong>Domain:</strong> Commands &amp; Control</p>
 </div>
 <h2>Columns <span class='count'>4</span></h2>
@@ -23,8 +25,8 @@
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
 <tr><td class='num'>1</td><td><strong>COMMANDSTATUSCODEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>2</td><td><strong>NAME</strong></td><td></td><td>VARCHAR2(16)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>DISPLAYNAME</strong></td><td></td><td>VARCHAR2(16)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>2</td><td><strong>NAME</strong></td><td>Status Name</td><td>VARCHAR2(16)</td><td>No</td><td>Internal command status name.</td></tr>
+<tr><td class='num'>3</td><td><strong>DISPLAYNAME</strong></td><td>Display Name</td><td>VARCHAR2(16)</td><td>No</td><td>Human-readable command status (sent status).</td></tr>
 <tr><td class='num'>4</td><td><strong>DESCRIPTION</strong></td><td></td><td>VARCHAR2(100)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 </tbody></table>
 </div>

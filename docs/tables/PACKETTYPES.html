@@ -14,16 +14,18 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Commands &amp; Control<span class='sep'>/</span>PACKETTYPES</div>
 <h1>PACKETTYPES</h1>
+<p class='muted'>Packet Type</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Code table of packet types (e.g., 8 = Published, 9 = Gap Analysis, on-demand).</p>
+<p><strong>Grain:</strong> One row per packet type</p>
 <p class='muted'><strong>Domain:</strong> Commands &amp; Control</p>
 </div>
 <h2>Columns <span class='count'>2</span></h2>
 <div class='panel'>
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
-<tr><td class='num'>1</td><td><strong>PACKETTYPEID</strong></td><td></td><td>NUMBER(3)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>2</td><td><strong>NAME</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>1</td><td><strong>PACKETTYPEID</strong></td><td>Packet Type Identifier</td><td>NUMBER(3)</td><td>No</td><td>Identifier for the packet type (e.g., 8=Published, 9=Gap Analysis).</td></tr>
+<tr><td class='num'>2</td><td><strong>NAME</strong></td><td>Packet Type Name</td><td>VARCHAR2(50)</td><td>Yes</td><td>Name of the packet type.</td></tr>
 </tbody></table>
 </div>
 </div>

@@ -14,18 +14,20 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Premises &amp; Locations<span class='sep'>/</span>GPSLOCATIONS</div>
 <h1>GPSLOCATIONS</h1>
+<p class='muted'>GPS Location</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Latitude/longitude for a meter or collector; entered during installation import (layered routing) or read from the meter (geolocated routing).</p>
+<p><strong>Grain:</strong> One row per GPS location</p>
 <p class='muted'><strong>Domain:</strong> Premises &amp; Locations</p>
 </div>
 <h2>Columns <span class='count'>6</span></h2>
 <div class='panel'>
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
-<tr><td class='num'>1</td><td><strong>GPSLOCATIONID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>1</td><td><strong>GPSLOCATIONID</strong></td><td>GPS Location Identifier</td><td>NUMBER(10)</td><td>No</td><td>Unique identifier for the GPS location.</td></tr>
 <tr><td class='num'>2</td><td><strong>ENDPOINTID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>LATITUDE</strong></td><td></td><td>NUMBER(12,8)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>4</td><td><strong>LONGITUDE</strong></td><td></td><td>NUMBER(12,8)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>3</td><td><strong>LATITUDE</strong></td><td>Latitude</td><td>NUMBER(12,8)</td><td>No</td><td>Latitude of the meter or collector.</td></tr>
+<tr><td class='num'>4</td><td><strong>LONGITUDE</strong></td><td>Longitude</td><td>NUMBER(12,8)</td><td>No</td><td>Longitude of the meter or collector.</td></tr>
 <tr><td class='num'>5</td><td><strong>ALTITUDE</strong></td><td></td><td>NUMBER(8,2)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>6</td><td><strong>UTCTIMECAPTURED</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 </tbody></table>

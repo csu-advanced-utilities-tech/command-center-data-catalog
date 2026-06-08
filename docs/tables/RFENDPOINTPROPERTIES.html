@@ -14,27 +14,29 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Endpoints &amp; Meters<span class='sep'>/</span>RFENDPOINTPROPERTIES</div>
 <h1>RFENDPOINTPROPERTIES</h1>
+<p class='muted'>RF Endpoint Properties</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Additional RF/endpoint detail and properties (DCW version, neighbor count, mesh layer/path, firmware activation).</p>
+<p><strong>Grain:</strong> One row per endpoint</p>
 <p class='muted'><strong>Domain:</strong> Endpoints &amp; Meters</p>
 </div>
 <h2>Columns <span class='count'>101</span></h2>
 <div class='panel'>
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
-<tr><td class='num'>1</td><td><strong>ENDPOINTID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>1</td><td><strong>ENDPOINTID</strong></td><td>Endpoint Identifier</td><td>NUMBER(10)</td><td>No</td><td>Endpoint these RF properties belong to.</td></tr>
 <tr><td class='num'>2</td><td><strong>OWNERID</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>3</td><td><strong>OUTAGEINTERVAL</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>4</td><td><strong>AUTOCONFIGURE</strong></td><td></td><td>NUMBER(1)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>5</td><td><strong>CONFIGGROUPACTIVATIONDATE</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>6</td><td><strong>FIRMWAREACTIVATIONDATE</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>7</td><td><strong>ISDISCOVERED</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>7</td><td><strong>ISDISCOVERED</strong></td><td>Is Discovered</td><td>NUMBER(1)</td><td>No</td><td>Whether the endpoint has been discovered on the network.</td></tr>
 <tr><td class='num'>8</td><td><strong>METERMODELID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>9</td><td><strong>METERMODEID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>10</td><td><strong>POWERNO</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>11</td><td><strong>ACTIVEINMESH</strong></td><td></td><td>NUMBER(1)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>11</td><td><strong>ACTIVEINMESH</strong></td><td>Active In Mesh</td><td>NUMBER(1)</td><td>Yes</td><td>Whether the endpoint is currently active in the RF mesh.</td></tr>
 <tr><td class='num'>12</td><td><strong>NETWORKID</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>13</td><td><strong>LAYER</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>13</td><td><strong>LAYER</strong></td><td>Mesh Layer</td><td>NUMBER(10)</td><td>Yes</td><td>RF mesh layer (hop distance from collector).</td></tr>
 <tr><td class='num'>14</td><td><strong>PATH</strong></td><td></td><td>VARCHAR2(700)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>15</td><td><strong>READINGEXTRACTGROUPID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>16</td><td><strong>STAGINGFIRMWAREID</strong></td><td></td><td>NUMBER(5)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
@@ -47,9 +49,9 @@
 <tr><td class='num'>23</td><td><strong>WANADDRESS</strong></td><td></td><td>NUMBER(19)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>24</td><td><strong>HASINITPOLLDATA</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>25</td><td><strong>WANSENTDATE</strong></td><td></td><td>TIMESTAMP(6)(11)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>26</td><td><strong>DCWVERSION</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>26</td><td><strong>DCWVERSION</strong></td><td>DCW Version</td><td>VARCHAR2(50)</td><td>Yes</td><td>Device Configuration Ware (DCW) version on the endpoint.</td></tr>
 <tr><td class='num'>27</td><td><strong>LATESTTICKLESUCCESS</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>28</td><td><strong>NUMBEROFNEIGHBORS</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>28</td><td><strong>NUMBEROFNEIGHBORS</strong></td><td>Number of Neighbors</td><td>NUMBER(10)</td><td>Yes</td><td>Count of RF mesh neighbors the endpoint can reach.</td></tr>
 <tr><td class='num'>29</td><td><strong>CONFIRMEDTIMEZONECODE</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>30</td><td><strong>DEVICESCHEDULEID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>31</td><td><strong>METERPROGRAMCHANGECOUNT</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>

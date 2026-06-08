@@ -14,8 +14,10 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Events, Errors &amp; Status<span class='sep'>/</span>EVENTTYPES</div>
 <h1>EVENTTYPES</h1>
+<p class='muted'>Event Type</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Names of the event types sent to Command Center.</p>
+<p><strong>Grain:</strong> One row per event type</p>
 <p class='muted'><strong>Domain:</strong> Events, Errors &amp; Status</p>
 </div>
 <h2>Columns <span class='count'>8</span></h2>
@@ -23,8 +25,8 @@
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
 <tr><td class='num'>1</td><td><strong>EVENTTYPEID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>2</td><td><strong>NAME</strong></td><td></td><td>VARCHAR2(70)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>3</td><td><strong>NOTES</strong></td><td></td><td>VARCHAR2(255)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>2</td><td><strong>NAME</strong></td><td>Event Type Name</td><td>VARCHAR2(70)</td><td>Yes</td><td>Name of the event type (e.g., Leading kvarh, Low battery detected).</td></tr>
+<tr><td class='num'>3</td><td><strong>NOTES</strong></td><td>Notes</td><td>VARCHAR2(255)</td><td>Yes</td><td>Notes about the event type.</td></tr>
 <tr><td class='num'>4</td><td><strong>SCRTYNTFCTNCD</strong></td><td></td><td>NUMBER(2)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>5</td><td><strong>EVENTCATGRYID</strong></td><td></td><td>NUMBER(22)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>6</td><td><strong>EVENTSRCID</strong></td><td></td><td>NUMBER(22)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>

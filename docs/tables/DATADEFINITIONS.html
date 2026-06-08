@@ -14,27 +14,29 @@
 <div class='page'>
 <div class='breadcrumb'><a href='../index.html'>Catalog</a><span class='sep'>/</span>Access &amp; Admin<span class='sep'>/</span>DATADEFINITIONS</div>
 <h1>DATADEFINITIONS</h1>
+<p class='muted'>Data Definition</p>
 <div class='panel pad'>
-<p class='muted'>No description yet.</p>
+<p>Lists the data types that can be received from an endpoint and that correlate to meter reads (e.g., kWh, current, voltage).</p>
+<p><strong>Grain:</strong> One row per data definition</p>
 <p class='muted'><strong>Domain:</strong> Access &amp; Admin</p>
 </div>
 <h2>Columns <span class='count'>35</span></h2>
 <div class='panel'>
 <table>
 <thead><tr><th class='num'>#</th><th>Column</th><th>Business Name</th><th>Data Type</th><th>Nullable</th><th>Description</th></tr></thead><tbody>
-<tr><td class='num'>1</td><td><strong>DATADEFINITIONID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>2</td><td><strong>NAME</strong></td><td></td><td>VARCHAR2(255)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>1</td><td><strong>DATADEFINITIONID</strong></td><td>Data Definition Identifier</td><td>NUMBER(10)</td><td>No</td><td>Identifier for a read/measurement type (e.g., 1=kWh).</td></tr>
+<tr><td class='num'>2</td><td><strong>NAME</strong></td><td>Data Definition Name</td><td>VARCHAR2(255)</td><td>Yes</td><td>Full name of the measurement type.</td></tr>
 <tr><td class='num'>3</td><td><strong>BITS</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>4</td><td><strong>ENDPOINTDATATYPEID</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>5</td><td><strong>MINVALUE</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>6</td><td><strong>MAXVALUE</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>7</td><td><strong>SCALEFACTOR</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>8</td><td><strong>NOTES</strong></td><td></td><td>CLOB(4000)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>8</td><td><strong>NOTES</strong></td><td>Notes</td><td>CLOB(4000)</td><td>Yes</td><td>Notes describing the measurement type.</td></tr>
 <tr><td class='num'>9</td><td><strong>PROCESSINGRULE</strong></td><td></td><td>NUMBER(10)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>10</td><td><strong>DATASIZEGROUPID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>11</td><td><strong>ISPUBLIC</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>12</td><td><strong>TOU</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
-<tr><td class='num'>13</td><td><strong>SHORTNAME</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
+<tr><td class='num'>13</td><td><strong>SHORTNAME</strong></td><td>Short Name</td><td>VARCHAR2(50)</td><td>Yes</td><td>Abbreviated name of the measurement type.</td></tr>
 <tr><td class='num'>14</td><td><strong>DBCOLUMN</strong></td><td></td><td>VARCHAR2(50)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>15</td><td><strong>ISDIAGNOSTIC</strong></td><td></td><td>NUMBER(1)</td><td>No</td><td><span class='undocumented'>—</span></td></tr>
 <tr><td class='num'>16</td><td><strong>READINGSTABLEID</strong></td><td></td><td>NUMBER(10)</td><td>Yes</td><td><span class='undocumented'>—</span></td></tr>
