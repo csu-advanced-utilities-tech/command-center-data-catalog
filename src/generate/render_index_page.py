@@ -5,7 +5,10 @@ from html import escape
 
 BASE_DIR = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(BASE_DIR / "src"))
-from utils.constants import SITE_TITLE, GOVERNANCE_HUB_URL, DOMAIN_MAP, OTHER_DOMAIN, domain_for
+from utils.constants import (
+    SITE_TITLE, GOVERNANCE_HUB_URL, DOMAIN_MAP, OTHER_DOMAIN, domain_for,
+    gate_div, gate_script,
+)
 
 CATALOG_DIR = BASE_DIR / "output" / "catalog"
 SITE_DIR = BASE_DIR / "docs"
@@ -48,6 +51,10 @@ def main():
     html.append("  <link rel='stylesheet' href='assets/styles.css'>")
     html.append("</head>")
     html.append("<body>")
+
+    # Access gate + wrapper (hidden until unlocked).
+    html.append(gate_div(SITE_TITLE))
+    html.append("<div id='site' style='display:none'>")
 
     # Top bar (matches the governance hub).
     html.append("<header class='topbar'>")
@@ -113,7 +120,9 @@ def main():
     html.append("<div id='noResults'>No tables match your search.</div>")
     html.append("</div>")  # .page
 
+    html.append("</div>")  # #site
     html.append("<script src='assets/search.js'></script>")
+    html.append(gate_script())
     html.append("</body>")
     html.append("</html>")
 

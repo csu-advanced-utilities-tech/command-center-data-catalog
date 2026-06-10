@@ -7,6 +7,8 @@
   <link rel='stylesheet' href='../assets/styles.css'>
 </head>
 <body>
+<div id='gate' class='gate' style='display:none'><form id='gateForm' class='gate-box'><h1>Command Center Data Catalog</h1><p class='muted'>This site is restricted. Enter the access password to continue.</p><input type='password' id='gatePwd' placeholder='Password' autocomplete='current-password' autofocus><button type='submit'>Enter</button><p id='gateErr' class='gate-err' style='display:none'>Incorrect password. Try again.</p></form></div>
+<div id='site' style='display:none'>
 <header class='topbar'>
   <a class='brand' href='../index.html'>Command Center Data Catalog</a>
   <a class='hub-link' href='https://csu-advanced-utilities-tech.github.io/data-governance/' target='_blank' rel='noopener'>Governance Hub &#8599;</a>
@@ -63,5 +65,16 @@
 </tbody></table>
 </div>
 </div>
+</div>
+<script>
+(function(){
+  var H='863008d1bad2456b0b5c8abf04dae82c1e636ba89f5c876fa5daf2daaac91d6a';
+  var gate=document.getElementById('gate'),site=document.getElementById('site'),form=document.getElementById('gateForm'),pwd=document.getElementById('gatePwd'),err=document.getElementById('gateErr');
+  function reveal(){gate.style.display='none';site.style.display='';}
+  async function sha(t){var b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return Array.from(new Uint8Array(b)).map(function(x){return x.toString(16).padStart(2,'0');}).join('');}
+  if(sessionStorage.getItem('csu_gate_ok')==='1'){reveal();}else{gate.style.display='';if(pwd)pwd.focus();}
+  form.addEventListener('submit',async function(e){e.preventDefault();var h=await sha(pwd.value);if(h===H){sessionStorage.setItem('csu_gate_ok','1');reveal();}else{err.style.display='block';pwd.value='';pwd.focus();}});
+})();
+</script>
 </body>
 </html>
